@@ -1,0 +1,19 @@
+# Large or sensitive game binaries
+*.apk
+*.apkm
+*.aab
+*.obb
+*.jks
+*.keystore
+
+# Generated analysis output
+/extracted/
+/original/
+/mod-base/
+
+# Local tooling
+.gradle/
+.idea/
+.vscode/
+*.log
+*.tmp
