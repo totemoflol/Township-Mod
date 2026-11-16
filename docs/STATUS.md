@@ -13,3 +13,8 @@
 ## Input handling
 
 The repository is public, so APK/APKM files are excluded. Store input binaries on the VPS and keep only hashes, metadata, and reproducible notes in Git.
+
+## Documentation index
+
+- `docs/ANALYSIS-ENVIRONMENT.md` — tooling and workspace layout
+- `docs/THIRD-PARTY-TOOLS.md` — mechanism class + defensive hardening notes on third-party Township tools (educational/defensive; no buildable spec)
