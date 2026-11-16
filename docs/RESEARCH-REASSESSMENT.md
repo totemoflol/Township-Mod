@@ -188,6 +188,18 @@ the real Township co-op and persists after reload." Per the brief this is
   verified causal fact** (STRONGLY SUPPORTED that a C/D-class mechanism
   is required; UNKNOWN which).
 
+> **Gate note (inputs now present):** C.5 above withheld "Regatta
+> causation by local save edits" partly on "save files absent — Part B
+> gate." That gate is **cleared**: both Part B inputs are now present
+> and triaged (`docs/TOWNSHIP-SAVE-FILE-ANALYSIS.md`, B.4
+> stop-at-metadata). The classification **still stands and is in
+> fact strengthened**: the supplied save payloads are high-entropy
+> binary with no legible fields (B.2/B.4), so local save-file editing
+> remains **not demonstrated** — there are no decodable fields to
+> edit offline without key material. Part A (E-15..E-18) additionally
+> shows the tool's VPS is a **user-configurable control plane**
+> (`TWN_API_URL`, §A.9b), further consistent with H3.
+
 ## C.6 Byte-level verified facts (kept, separated from interpretation)
 
 **VERIFIED / STRONGLY SUPPORTED this pass:**
@@ -206,12 +218,22 @@ the real Township co-op and persists after reload." Per the brief this is
   re-run C.8).
 
 **Interpretations NOT verified by any byte-level evidence:**
-- The §6 mechanism sentence (downgraded, C.4).
+- The §6 mechanism sentence (downgraded, C-4).
 - Any statement that the tool's backend or Playrix's server performed a
-  specific action (endpoints absent from disk — Part A gate).
-- Which H1–H4 family generates the Regatta rounds (UNKNOWN, Part D).
-- Regatta causation by local save edits (impossible to prove — inputs
-  absent, and a proven path would also need a server-side correlation).
+  specific action. *(Note: the "endpoints absent from disk — Part A
+  gate" condition that deferred this is now cleared — the tool's
+  endpoint/URL census is populated in
+  `docs/TOWNTOOL-APK-ANALYSIS.md` §A.8–§A.9b (E-15..E-18) — but the
+  census proves only which hosts/paths the client is configured to
+  talk to, not what the server does; the specific-action claims
+  remain unverified.)*
+- Which H1–H4 family generates the Regatta rounds (UNKNOWN, Part D;
+  H3 STRONGLY SUPPORTED, H1/H4 refuted in-APK — see Part D).
+- Regatta causation by local save edits (impossible to prove with
+  these artifacts alone: Part B triage shows the supplied save
+  payloads are high-entropy binary with no decodable fields — B.4
+  stop-at-metadata; and a proven path would also need a server-side
+  correlation).
 
 ## C.7 Constraints honored
 
@@ -229,8 +251,14 @@ brute-forcing, decryption attempts, or anti-cheat bypass.
 semantic (non-equivalent) clusters**, 5 semantic instructions total.
 
 - Equivalent instruction mix (orig → mod): 490 `mov`→`eor`, 484
-  `mov`→`and`, 465 `mov`→`mov`, 455 `sub`… (1,894 instructions across
-  the 1,889 clusters).
+  `mov`→`and`, 465 `mov`→`mov`, 455 `mov`→`sub`
+  (1,894 instructions across the 1,889 clusters).
+
+  *Note:* the prior-session C.8 wrote "455 `sub`…" as a shorthand; the
+  exact label in the fresh `classify_so_diff2.py` run is `mov`→`sub`
+  (the original instruction is a `mov`-family load-immediate that was
+  rewritten to `sub`). The counts (490/484/465/455 = 1,894) are
+  unchanged between runs.
 - Semantic clusters, at exactly the three Part C sites:
   - `0x4ef7150`: `sub sp,sp,#0x80`→`mov x0,#0` +
     `str x30,[sp,#0x60]`→`ret` (2 insns)
@@ -241,6 +269,57 @@ semantic (non-equivalent) clusters**, 5 semantic instructions total.
 **VERIFIED:** the first-brief 1,889 no-op / 3 semantic-gut counts are
 reproduced exactly by an independent re-run; the re-worded §6 claim in
 C-4 now rests on re-confirmed byte-level figures.
+
+## C.9 Full re-run confirmation (this session)
+
+All three Part C scripts re-ran this session with **exit 0** on the
+same input files (hashes in `docs/EVIDENCE-MANIFEST.txt` §1):
+
+| Script | Result re-confirmed |
+|---|---|
+| `scripts/semantic_gut.py` | prologue read-offs at the three sites: `sub sp,sp,#0x80` @ 0x4ef7150 (file off 82,800,976); `sub sp,sp,#0x1b0` @ 0x7bb3414 (file off 129,709,076); `stp x30,x21,[sp,#-0x20]!` @ 0x7bc076c (file off 129,763,180). |
+| `scripts/classify_so_diff2.py` (task `bhoxb0rvj`) | **1,892 clusters = 1,889 equivalent zeroing-rewrites (1,894 insns) + 3 semantic clusters** (5 insns at exactly the three Part C sites). Mix 490/484/465/455 as C-8 (corrected `mov`→`sub` label). |
+| `scripts/reverify_guts.py` (task `bmmrw80i0`) | `.dynsym` 3,670 entries, no `.symtab`; `.eh_frame_hdr` **NON-CLASSIC** (self-test **FAIL** → every FDE verdict **INCONCLUSIVE**, unchanged); per-site direct `bl` caller counts **0 / 17 / 6** (capstone-verified decoder), site 0 additionally `b`=1 (unvalidated `b` decoder → **not evidence**); **no 8-byte data pointers** to any of the three sites; `cloudProjectNumber` 0xb4359ae5c1L = **773,993,457,089** re-confirmed. |
+
+**Net status:** every byte-level figure in C-1..C-6 is **reproduced**.
+The FDE table remains **INCONCLUSIVE** (non-standard IL2CPP layout). The
+§6 "native patches disable balance deduction/commit → infinite
+currency" claim **remains DOWNGRADED / HYPOTHESIS** — this re-run adds
+*no* new call/data-flow proof, so the C-4 downgrade stands unchanged.
+The task-output file for `reverify_guts.py` (`…\tasks\bmmrw80i0.output`)
+carries one legacy-encoding byte that `Read` shows as U+FFFD —
+cosmetic only; the numeric results are intact.
+
+## C.10 Third-brief inputs arrived — gate statements superseded (2026-11-16)
+
+All three third-brief inputs are now present and fully triaged:
+`incoming/TwnTool.apk` (SHA-256 `8b1931…bd24b`),
+`incoming/mGameInfo.txt.zip` (`ba43b5…f496`) and
+`incoming/LocalInfo.txt.zip` (`53fa08…e38`) (identical in
+`repo/incoming/`; extracted copies under `analysis/incoming/`).
+Consequences:
+
+- **Part A is fully populated** — `docs/TOWNTOOL-APK-ANALYSIS.md`
+  (evidence E-1..E-19; §A.8 full URL census, §A.9b device-lock /
+  VPS-config / eel-function census).
+- **Part B is fully populated** — `docs/TOWNSHIP-SAVE-FILE-ANALYSIS.md`
+  (ZIP CRC-valid; both inner payloads high-entropy binary, stop at
+  metadata per mandate).
+- **Part C verdicts are UNCHANGED.** The two stale gate statements
+  ("save files absent — Part B gate" in C.5; "endpoints absent from
+  disk — Part A gate" in C.6) have been flipped **in place** (gate
+  note under C.5; note under C.6). Every byte-level figure in
+  C-1..C-9 — `bl` caller counts 0/17/6, FDE INCONCLUSIVE, the §6
+  DOWNGRADE, 1,889 no-op + 3 semantic rewrites, `cloudProjectNumber`
+  = 773,993,457,089 — still stands; none of it depended on the now-
+  arrived inputs.
+- The only claim whose status moved: **Regatta persistence** remains
+  an *observation*; H3 (server-side account assignment via the
+  tool's VPS control plane) is now **STRONGLY SUPPORTED** by the
+  Part A census (E-15..E-18: user-configurable `TWN_API_URL`,
+  signed-HTTP flows, HWID device-lock) — still not proof of
+  causation, which would require server-side correlation outside
+  this mandate's scope.
 
 ## Provenance & reproducibility
 
