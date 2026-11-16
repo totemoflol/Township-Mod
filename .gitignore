@@ -6,6 +6,14 @@
 *.jks
 *.keystore
 
+# ...except drop-in targets staged in incoming/ (tracked, small analysis files only)
+!incoming/
+!incoming/*.apk
+!incoming/*.apks
+!incoming/*.txt
+!incoming/*.xml
+!incoming/*.csv
+
 # Generated analysis output
 /extracted/
 /original/

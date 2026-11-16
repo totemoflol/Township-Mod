@@ -1,0 +1,111 @@
+EVIDENCE MANIFEST — Township mod / TwnTool second investigation
+Date: 2026-11-16 · Status: LOCAL OUTPUT. Not committed, not pushed.
+Scope: every input artifact read this investigation, with size and SHA-256
+(exact digests, computed 2026-11-16 via PowerShell Get-FileHash), plus the
+toolchain versions and the exact commands used. Companion docs:
+  docs/TOWNTOOL-APK-ANALYSIS.md    (Parts A + D)
+  docs/TOWNSHIP-SAVE-FILE-ANALYSIS.md (Part B)
+  docs/RESEARCH-REASSESSMENT.md     (Part C)
+First-brief docs still authoritative for byte-level claims:
+  docs/REPORT.md, docs/MECHANISM-ANALYSIS.md (corrections in Part C).
+
+===============================================================================
+1. INPUT ARTIFACTS (all under C:\Township-Mod\)
+===============================================================================
+Path (relative to C:\Township-Mod\)            Size (bytes)   SHA-256
+------------------------------------------------------------------------------------------
+CLAUDE-RESEARCH-PROMPT.txt                     1,078        682D7242B9FE1393AB4BECB4B258F4A4CD8D0BBBD690654630198DCFA07B6B6A
+CLAUDE-SECOND-INVESTIGATION-PROMPT.txt         8,070        04D177B3E352F7AD6E4CFF55A109B43DC0F65A196A1803ECC14F417D7AEBC33D
+extracted/original-arm64/lib/arm64-v8a/libgame.so      186,157,568
+                                                B6D4C9BAB246434EA4B84DD29D3837563A85486B504FA3EF486DFFABB875DFF9
+extracted/mod-apk/lib/arm64-v8a/libgame.so             186,157,568
+                                                A38B07FC6B3D17E5D258E38C2B992A1F00AE2F4E012B4D21092F18ED899EA3E6
+extracted/mod-apk/lib/arm64-v8a/libSignatureKiller.so     21,184
+                                                482F0088D1C7CBB01F649C87C5BE157A81803718FEBF39450698EEB668BF1076
+extracted/mod-apk/assets/SignatureKiller/origin.apk      147,633,268
+                                                04169E298F44495DA34E93BA518BDF37D44962110F9826310831F1AEFF970423
+mod-base/township-mod_40.0.1-apkvision.apk            352,069,324
+                                                4244FD06BB990A182C74D624F92D3ECAE100B052C8018814B2A6639E3B2777B5
+original/com.playrix.township_40.0.1-1040010_4arch_7dpi_13lang_
+_da810d3b8e8f7e550882ffd023c6d110_apkmirror.com.apkm   366,605,411
+                                                A2A160CF352E1396EEFE56B6E4C904CB568C92F2A2C16193BE98A41E5CA6C1BF
+
+Note: extracted/original-arm64/ and extracted/mod-apk/ are derived
+extraction trees of the two .apk/.apkm rows above; the .so rows are the
+exact files all Part C scripts read. No .so/.so-related file other than
+the four rows above was read for byte-level claims.
+
+Read-only smali consulted (not re-hashed; part of extracted/apktool-*
+trees): extracted/apktool-original-base/smali/com/playrix/engine/
+PlayIntegrityCustom.smali (lines 17, 403, 469 — cloudProjectNumber).
+
+===============================================================================
+2. ABSENT INPUTS (branch stopped at the gate — NOT fabricated)
+===============================================================================
+C:\Township-Mod\incoming\            EXISTS BUT IS EMPTY (only . and ..)
+  - TwnTool.apk (or any .apk/.apks/.apkm tool package)      ABSENT
+  - mGameInfo.txt                                            ABSENT
+  - LocalInfo.txt.xml                                        ABSENT
+  - ZIP/container bundles, screenshot sets                   ABSENT
+Consequence: Part A evidence table has zero populated rows; Part B triage
+was not run (scripts/savefile_triage.py is ready but has no input).
+
+===============================================================================
+3. GENERATED OUTPUTS (this investigation; all local, uncommitted)
+===============================================================================
+docs/TOWNTOOL-APK-ANALYSIS.md        (Parts A + D; includes A.0 missing-input report)
+docs/TOWNSHIP-SAVE-FILE-ANALYSIS.md  (Part B stop-report + protocol)
+docs/RESEARCH-REASSESSMENT.md        (Part C corrections C-1..C-5, §6 downgrade)
+docs/EVIDENCE-MANIFEST.txt           (this file)
+scripts/reverify_guts.py            (NEW — FDE self-gated walk, bl/b decode,
+                                     data-pointer scan; read-only, stdout)
+scripts/savefile_triage.py          (NEW — read-only Part B triage; writes
+                                     only under analysis/out/<basename>/)
+First-brief scripts re-used: scripts/classify_so_diff2.py,
+scripts/semantic_gut.py (read-only inspection this pass).
+
+===============================================================================
+4. TOOLCHAIN & VERSIONS
+===============================================================================
+OS: Windows (C:\Township-Mod project root), PowerShell 5.1 shell
+Python 3.12.10
+pip 25.0.1
+capstone 5.0.7 (aarch64 disassembly; the only disassembler available)
+absent: readelf, objdump, pyelftools, lief, yara, ghidra CLI
+  -> ELF parsing done by hand in Python (struct-based), documented per
+     script; FDE walk is self-gated (Part C §C.3) precisely because the
+     binary ships a non-standard .eh_frame/.eh_frame_hdr layout.
+SHA-256 computed with PowerShell Get-FileHash (2026-11-16).
+
+===============================================================================
+5. COMMANDS USED (reproduce from C:\Township-Mod)
+===============================================================================
+python scripts/reverify_guts.py
+    [FDE walk + self-test + per-site status]
+python scripts/classify_so_diff2.py
+    [no-op vs semantic-gut diff classification; re-run task bdh922mkk,
+     exit 0: 1892 clusters = 1889 equivalent zeroing rewrites + 3
+     semantic clusters (5 insns at the three Part C sites) — see
+     RESEARCH-REASSESSMENT §C.8]
+python scripts/semantic_gut.py
+    [prologue read-offs at the three patch sites]
+python scripts/savefile_triage.py <file1> ...
+    [NOT RUN — no Part B inputs present]
+PowerShell: Get-FileHash -Algorithm SHA256 over the eight rows in §1;
+            Get-Item / Test-Path for sizes and the incoming/ listing.
+capstone bl-decode verification: 128 KB .text slice 0x4471680..0x4491680,
+    decoder self-checked 2891/2891 against capstone absolute targets
+    (Part C §C.4); full .text bl scan = 2,011,476 bl words decoded,
+    per-site caller counts 0 / 17 / 6.
+
+===============================================================================
+6. CONSTRAINTS (restated, all honored)
+===============================================================================
+- No commit, no push, no GitHub remote touched.
+- Originals preserved; every byte-level read was read-only; the only
+  write target for tooling is analysis/out/.
+- No Playrix live interaction; no credential handling; no secrets
+  printed (cloudProjectNumber is a public project identifier, not a key).
+- No brute-forcing, no decryption attempts, no anti-cheat bypass, no
+  cheating tooling.
+- Missing inputs reported as missing, never fabricated.
