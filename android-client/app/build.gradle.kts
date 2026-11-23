@@ -8,6 +8,9 @@ val releaseKeystorePath = System.getenv("ANDROID_KEYSTORE_PATH")
 val releaseKeystorePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
 val releaseKeyAlias = System.getenv("ANDROID_KEY_ALIAS")
 val releaseKeyPassword = System.getenv("ANDROID_KEY_PASSWORD")
+val licenseApiUrl = (project.findProperty("totLicenseApiUrl") as String?)
+    ?: System.getenv("TOT_LICENSE_API_URL")
+    ?: ""
 val hasReleaseSigning = listOf(
     releaseKeystorePath,
     releaseKeystorePassword,
@@ -22,9 +25,14 @@ android {
         applicationId = "com.totemoflol.tottools"
         minSdk = 29
         targetSdk = 35
-        versionCode = 4
-        versionName = "0.3.0-beta"
+        versionCode = 5
+        versionName = "0.4.0-beta"
         resValue("string", "app_name", "ToT Tools")
+        buildConfigField(
+            "String",
+            "LICENSE_API_URL",
+            "\\"\\\${licenseApiUrl.replace("\\\\", "\\\\\\\\").replace("\\"", "\\\\\\"")}\\"
+        )
     }
     signingConfigs {
         if (hasReleaseSigning) {
@@ -40,7 +48,7 @@ android {
     buildTypes {
         getByName("debug") {
             applicationIdSuffix = ".test"
-            versionNameSuffix = "-auth-test"
+            versionNameSuffix = "-license-test"
             resValue("string", "app_name", "ToT Tools TEST")
         }
         getByName("release") {
@@ -57,7 +65,10 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-    buildFeatures { compose = true }
+    buildFeatures {
+        compose = true
+        buildConfig = true
+    }
 }
 
 dependencies {
