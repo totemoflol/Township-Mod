@@ -3,14 +3,18 @@ package com.totemoflol.tottools
 import android.util.Xml
 import org.xmlpull.v1.XmlPullParser
 import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
+import java.util.zip.ZipEntry
 import java.util.zip.ZipInputStream
+import java.util.zip.ZipOutputStream
+import net.jpountz.lz4.LZ4Factory
 
 internal data class DecodeReport(
     val sourceName: String, val sourceEntry: String?, val originalBytes: Int,
     val decodedXml: ByteArray, val rootName: String, val directChildren: Int,
     val roundTripVerified: Boolean, val hashLength: Long?, val seed: Long?,
     val capacity: Int?, val transformedBytes: Int, val ignoredPaddingBytes: Int,
-    val usedLz4: Boolean, val notes: List<String>
+    val usedLz4: Boolean, val notes: List<String>, val encodedData: ByteArray? = null
 )
 
 internal object TownshipDecoder {
@@ -33,7 +37,57 @@ internal object TownshipDecoder {
         val parsed = parseXml(data)
         return DecodeReport(name, unwrapped.second, input.size, data, parsed.first, parsed.second,
             false, null, null, null, data.size, 0, false,
-            listOf("Input was already XML; 0x79 decoding was not needed."))
+            listOf("Input was already XML; 0x79 decoding was not needed."), null)
+    }
+
+    fun encodeEditedSave(report: DecodeReport, editedXml: ByteArray): ByteArray {
+        val original = report.encodedData
+            ?: throw IllegalStateException("Import the original encoded save export to create an edited save copy.")
+        val seed = report.seed
+            ?: throw IllegalStateException("The selected file does not contain the required save metadata.")
+
+        val transformed = if (report.usedLz4) {
+            val xml = if (editedXml.isNotEmpty() && editedXml.last() == 0.toByte()) editedXml
+                else editedXml + byteArrayOf(0)
+            val compressor = LZ4Factory.fastestInstance().fastCompressor()
+            val compressed = ByteArray(compressor.maxCompressedLength(xml.size))
+            val compressedSize = compressor.compress(xml, 0, xml.size, compressed, 0, compressed.size)
+            ByteArray(8 + compressedSize).also { wrapped ->
+                LZ4_MAGIC.copyInto(wrapped, 0)
+                putU32(xml.size.toLong(), wrapped, 4)
+                compressed.copyInto(wrapped, 8, 0, compressedSize)
+            }
+        } else {
+            editedXml
+        }
+
+        val capacity = maxOf(report.capacity ?: (original.size - 8), transformed.size)
+        require(capacity <= 64 * 1024 * 1024) { "Edited save exceeds the supported size." }
+        val encoded = encode079(transformed, seed, capacity)
+        val padded = ByteArray(8 + capacity)
+        encoded.copyInto(padded)
+
+        val entryName = (report.sourceEntry
+            ?.substringAfterLast('/')
+            ?.substringAfterLast('\\')
+            ?.takeIf { it.endsWith(".xml", true) })
+            ?: if (report.sourceName.contains("LocalInfo", true)) "LocalInfo.txt.xml"
+            else "mGameInfo.txt.xml"
+
+        val output = ByteArrayOutputStream()
+        ZipOutputStream(output).use { zip ->
+            zip.putNextEntry(ZipEntry(entryName))
+            zip.write(padded)
+            zip.closeEntry()
+        }
+        return output.toByteArray()
+    }
+
+    private fun putU32(value: Long, target: ByteArray, offset: Int) {
+        target[offset] = value.toByte()
+        target[offset + 1] = (value ushr 8).toByte()
+        target[offset + 2] = (value ushr 16).toByte()
+        target[offset + 3] = (value ushr 24).toByte()
     }
 
     private fun unwrapZip(input: ByteArray, name: String): Pair<ByteArray, String?> {
@@ -114,7 +168,7 @@ internal object TownshipDecoder {
         require(parsed != null) { "Decoded data did not pass XML parsing." }
         notes += "XML validation passed: root <" + parsed.first + ">; direct children: " + parsed.second + "."
         return DecodeReport(name, entry, originalSize, final, parsed.first, parsed.second, true,
-            hashLength, seed, capacity, transformed.size, padding.size, lz4, notes)
+            hashLength, seed, capacity, transformed.size, padding.size, lz4, notes, data)
     }
 
     private fun hashTable(hashLength: Long, initialSeed: Long): ByteArray {
