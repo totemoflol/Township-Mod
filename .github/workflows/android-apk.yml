@@ -45,9 +45,9 @@ jobs:
         run: |
           APK="android-client/app/build/outputs/apk/debug/app-debug.apk"
           cp "$APK" "ToT-Tools.apk"
-          TAG="tot-tools-beta-0.2.0"
+          TAG="tot-tools-beta-0.3.0"
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "ToT-Tools.apk" --clobber
           else
-            gh release create "$TAG" "ToT-Tools.apk" --title "ToT Tools Beta 0.2.0" --notes "Experimental beta build of ToT Tools. Android 10 or newer."
+            gh release create "$TAG" "ToT-Tools.apk" --title "ToT Tools Beta 0.3.0" --notes "Experimental beta build of ToT Tools. Android 10 or newer."
           fi
