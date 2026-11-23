@@ -27,7 +27,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardOptions
-import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -76,13 +75,12 @@ internal fun LicenseKeyScreen(
                 )
                 OutlinedTextField(
                     value = key,
-                    onValueChange = { key = it.uppercase().take(28) },
+                    onValueChange = { key = it.uppercase().filter { ch -> ch.isLetterOrDigit() || ch == '_' }.take(9) },
                     modifier = Modifier.fillMaxWidth(),
                     singleLine = true,
                     label = { Text("Licence key") },
-                    placeholder = { Text("TOT_XXXXXX_XXXXXX_XXXXXX") },
+                    placeholder = { Text("TOT_FHSKW") },
                     keyboardOptions = KeyboardOptions(capitalization = KeyboardCapitalization.Characters),
-                    visualTransformation = PasswordVisualTransformation()
                 )
                 if (message.isNotBlank()) {
                     Text(
