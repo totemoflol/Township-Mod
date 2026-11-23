@@ -1,0 +1,38 @@
+name: Build ToT Tools Licence Test APK
+on:
+  push:
+    branches:
+      - license-keys-test
+    paths:
+      - 'android-client/**'
+      - '.github/workflows/license-key-test-build.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    name: Build licence test APK
+    runs-on: ubuntu-latest
+    env:
+      TOT_LICENSE_API_URL: ${{ vars.TOT_LICENSE_API_URL }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v4
+      - name: Install Android 35 platform
+        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - uses: gradle/actions/setup-gradle@v6
+        with:
+          gradle-version: '8.9'
+      - name: Build test APK
+        working-directory: android-client
+        run: gradle --no-daemon -PtotLicenseApiUrl="$TOT_LICENSE_API_URL" :app:assembleDebug
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ToT-Tools-Licence-Key-Test
+          path: android-client/app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+          retention-days: 30
