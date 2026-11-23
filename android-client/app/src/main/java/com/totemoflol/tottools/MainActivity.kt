@@ -63,7 +63,10 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun ToTToolsApp() {
     val context = LocalContext.current
-    var authSession by remember { mutableStateOf(TestAuthStore.restore(context)) }
+    var licenseSession by remember { mutableStateOf<LicenseSession?>(null) }
+    var licenseKeyDraft by remember { mutableStateOf("") }
+    var authBusy by remember { mutableStateOf(true) }
+    var authMessage by remember { mutableStateOf("Checking saved licence…") }
     val scope = rememberCoroutineScope()
     val logoTransition = rememberInfiniteTransition(label = "brand-pulse")
     val logoScale by logoTransition.animateFloat(0.985f, 1.025f, infiniteRepeatable(tween(2600), RepeatMode.Reverse), label = "logo-scale")
@@ -92,6 +95,20 @@ private fun ToTToolsApp() {
             (search.isBlank() || item.label.contains(search, ignoreCase = true))
     }
 
+
+    LaunchedEffect(Unit) {
+        val savedKey = withContext(Dispatchers.IO) { LicenseKeyVault.restore(context) }
+        licenseKeyDraft = savedKey.orEmpty()
+        if (!savedKey.isNullOrBlank()) {
+            try {
+                licenseSession = withContext(Dispatchers.IO) { LicenseApi.activate(context, savedKey) }
+                authMessage = ""
+            } catch (e: Exception) {
+                authMessage = e.message ?: "Licence verification failed."
+            }
+        }
+        authBusy = false
+    }
 
     LaunchedEffect(Unit) {
         updateStatus = withContext(Dispatchers.IO) {
@@ -185,12 +202,29 @@ private fun ToTToolsApp() {
         Surface(Modifier.fillMaxSize(), color = Ink) {
             Box(Modifier.fillMaxSize()) {
                 AmbientGreenBackground(Modifier.fillMaxSize())
-                if (authSession == null) {
-                    AuthTestScreen { email, password ->
-                        val signedIn = TestAuthStore.signIn(context, email, password)
-                        if (signedIn != null) authSession = signedIn
-                        signedIn != null
-                    }
+                if (licenseSession == null) {
+                    LicenseKeyScreen(
+                        initialKey = licenseKeyDraft,
+                        busy = authBusy,
+                        message = authMessage,
+                        onActivate = { key ->
+                            licenseKeyDraft = key
+                            scope.launch {
+                                authBusy = true
+                                authMessage = "Verifying licence…"
+                                try {
+                                    val verified = withContext(Dispatchers.IO) { LicenseApi.activate(context, key) }
+                                    withContext(Dispatchers.IO) { LicenseKeyVault.store(context, key) }
+                                    licenseSession = verified
+                                    authMessage = ""
+                                } catch (e: Exception) {
+                                    authMessage = e.message ?: "Licence activation failed."
+                                } finally {
+                                    authBusy = false
+                                }
+                            }
+                        }
+                    )
                 } else {
             Column(
                 Modifier.fillMaxSize().verticalScroll(rememberScrollState())
@@ -222,17 +256,19 @@ private fun ToTToolsApp() {
                                 Text("BETA 0.4.0 TEST", Modifier.padding(horizontal = 10.dp, vertical = 6.dp), color = Mint, fontSize = 10.sp, fontWeight = FontWeight.Bold)
                             }
                             Text(
-                                if (authSession?.hasPremium == true) "PREMIUM TEST" else "FREE TEST",
+                                if (licenseSession?.expiresAt == null) "PAID LICENCE" else "PAID · EXPIRING",
                                 color = Gold,
                                 fontSize = 9.sp,
                                 fontWeight = FontWeight.Bold
                             )
                             TextButton(
                                 onClick = {
-                                    TestAuthStore.signOut(context)
-                                    authSession = null
+                                    scope.launch { withContext(Dispatchers.IO) { LicenseKeyVault.clear(context) } }
+                                    licenseSession = null
+                                    licenseKeyDraft = ""
                                     report = null
                                     editedValues = emptyMap()
+                                    authMessage = ""
                                 },
                                 contentPadding = PaddingValues(horizontal = 4.dp, vertical = 0.dp)
                             ) { Text("Sign out", fontSize = 10.sp) }
@@ -381,27 +417,7 @@ private fun ToTToolsApp() {
                                         shape = RoundedCornerShape(13.dp)
                                     )
 
-                                    if (authSession?.hasPremium != true) {
-                                        Card(
-                                            colors = CardDefaults.cardColors(containerColor = PanelAlt),
-                                            border = BorderStroke(1.dp, Gold.copy(alpha = 0.55f)),
-                                            shape = RoundedCornerShape(14.dp)
-                                        ) {
-                                            Column(Modifier.padding(15.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                                                Text("PREMIUM EDITOR LOCKED", color = Gold, fontWeight = FontWeight.Bold)
-                                                Text(
-                                                    when (authSession?.access) {
-                                                        TestAccess.EXPIRED -> "This test licence is expired. Sign in with the premium test account to test active access."
-                                                        else -> "This account has free access. Sign in with the premium test account to test the editor."
-                                                    },
-                                                    color = Muted,
-                                                    fontSize = 12.sp,
-                                                    lineHeight = 17.sp
-                                                )
-                                            }
-                                        }
-                                    } else if (visibleItems.isEmpty()) {
-                                        Text("No matching items in this category.", color = Muted, fontSize = 12.sp)
+                                    if (visibleItems.isEmpty()) {                                        Text("No matching items in this category.", color = Muted, fontSize = 12.sp)
                                     } else {
                                         visibleItems.forEach { item ->
                                             ItemEditorRow(
@@ -438,7 +454,7 @@ private fun ToTToolsApp() {
                                                 status = e.message ?: "Could not prepare the edited save."
                                             }
                                         },
-                                        enabled = authSession?.hasPremium == true && data.encodedData != null && changedItems.isNotEmpty() && validChanges,
+                                        enabled = data.encodedData != null && changedItems.isNotEmpty() && validChanges,
                                         modifier = Modifier.fillMaxWidth().height(51.dp),
                                         shape = RoundedCornerShape(14.dp)
                                     ) {
