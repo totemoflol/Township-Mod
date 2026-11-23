@@ -2,6 +2,7 @@ package com.totemoflol.tottools
 
 import android.net.Uri
 import android.os.Bundle
+import android.content.Intent
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
@@ -40,6 +41,8 @@ import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.net.HttpURLConnection
+import java.net.URL
 
 private val Ink = Color(0xFF07110B)
 private val Panel = Color(0xFF101D14)
@@ -70,6 +73,8 @@ private fun ToTToolsApp() {
     var search by remember { mutableStateOf("") }
     var editedValues by remember { mutableStateOf<Map<String, String>>(emptyMap()) }
     var pendingSave by remember { mutableStateOf<ByteArray?>(null) }
+    var updateStatus by remember { mutableStateOf("Checking for updates…") }
+    var latestReleaseUrl by remember { mutableStateOf("https://github.com/totemoflol/Township-Mod/releases/latest") }
 
     val items = remember(report) {
         report?.let { TownshipSaveEditor.findItems(it.decodedXml) } ?: emptyList()
@@ -84,6 +89,29 @@ private fun ToTToolsApp() {
     val visibleItems = items.filter { item ->
         item.category == selectedCategory &&
             (search.isBlank() || item.label.contains(search, ignoreCase = true))
+    }
+
+
+    LaunchedEffect(Unit) {
+        updateStatus = withContext(Dispatchers.IO) {
+            try {
+                val connection = (URL("https://api.github.com/repos/totemoflol/Township-Mod/releases/latest").openConnection() as HttpURLConnection).apply {
+                    connectTimeout = 8000
+                    readTimeout = 8000
+                    setRequestProperty("Accept", "application/vnd.github+json")
+                }
+                try {
+                    val json = org.json.JSONObject(connection.inputStream.bufferedReader().use { it.readText() })
+                    val tag = json.optString("tag_name", "")
+                    latestReleaseUrl = json.optString("html_url", latestReleaseUrl)
+                    val latest = Regex("(\\d+)\\.(\\d+)\\.(\\d+)").find(tag)?.value
+                    val current = Regex("(\\d+)\\.(\\d+)\\.(\\d+)").find(context.packageManager.getPackageInfo(context.packageName, 0).versionName ?: "0.0.0")?.value
+                    if (latest == null || current == null) "Update status unavailable"
+                    else if (latest == current) "You're up to date · $current"
+                    else "Update available · $latest (installed $current)"
+                } finally { connection.disconnect() }
+            } catch (_: Exception) { "Couldn't check for updates" }
+        }
     }
 
     LaunchedEffect(report) {
@@ -218,10 +246,40 @@ private fun ToTToolsApp() {
                                     Text("Import Township save", fontWeight = FontWeight.Bold)
                                 }
                             }
-                            Text("Choose an exported ZIP or an extracted save file.", color = Muted, fontSize = 11.sp)
+
+                            OutlinedButton(
+                                onClick = {
+                                    scope.launch {
+                                        busy = true
+                                        status = "Searching Township app data…"
+                                        try {
+                                            val found = withContext(Dispatchers.IO) { RootSaveFinder.find() }
+                                            val decoded = withContext(Dispatchers.IO) { TownshipDecoder.decode(found.second, found.first) }
+                                            report = decoded
+                                            status = "Detected and imported " + found.first.substringAfterLast('/') + "."
+                                        } catch (e: Exception) {
+                                            status = e.message ?: "Automatic detection failed. Use Import Township save."
+                                        } finally { busy = false }
+                                    }
+                                },
+                                enabled = !busy,
+                                modifier = Modifier.fillMaxWidth().height(50.dp),
+                                shape = RoundedCornerShape(15.dp)
+                            ) { Text("Auto-detect save on device", fontWeight = FontWeight.Bold) }
+                            Text("Auto-detect requires root access. Otherwise import an exported save above.", color = Muted, fontSize = 11.sp)
                         }
                     }
 
+
+                    Card(colors = CardDefaults.cardColors(containerColor = Panel), border = BorderStroke(1.dp, Line), shape = RoundedCornerShape(16.dp)) {
+                        Row(Modifier.fillMaxWidth().padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
+                            Column(Modifier.weight(1f)) {
+                                Text("APP UPDATE", color = Gold, style = MaterialTheme.typography.labelMedium, letterSpacing = 1.sp)
+                                Text(updateStatus, color = Muted, style = MaterialTheme.typography.bodySmall)
+                            }
+                            TextButton(onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(latestReleaseUrl))) }) { Text("View") }
+                        }
+                    }
                     Card(colors = CardDefaults.cardColors(containerColor = PanelAlt), shape = RoundedCornerShape(16.dp)) {
                         Row(Modifier.padding(14.dp), verticalAlignment = Alignment.CenterVertically) {
                             Surface(
