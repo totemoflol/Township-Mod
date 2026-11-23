@@ -1,4 +1,4 @@
-﻿name: Build ToT Tools APK
+name: Build ToT Tools APK
 on:
   workflow_dispatch:
   push:
@@ -8,10 +8,10 @@ on:
       - 'android-client/**'
       - '.github/workflows/android-apk.yml'
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
-    name: Build debug APK
+    name: Build and publish APK
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -32,11 +32,21 @@ jobs:
       - name: Compile ToT Tools
         working-directory: android-client
         run: gradle --no-daemon :app:assembleDebug
-      - name: Upload APK
+      - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: ToT-Tools-Android-APK
           path: android-client/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30
-
+      - name: Publish APK to GitHub Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          APK="android-client/app/build/outputs/apk/debug/app-debug.apk"
+          TAG="tot-tools-v1.0.0"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$APK#ToT-Tools.apk" --clobber
+          else
+            gh release create "$TAG" "$APK#ToT-Tools.apk" --title "ToT Tools v1.0.0" --notes "Android APK for ToT Tools. Android 10 or newer."
+          fi
