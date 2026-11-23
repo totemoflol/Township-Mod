@@ -3,7 +3,7 @@
 A native Android utility for working with Township save exports.
 
 - App name: ToT Tools
-- Version: 1.1.0
+- Version: 0.2.0-beta (pre-release)
 - Minimum Android: Android 10 (API 29)
 - Import: Township save ZIP exports and extracted save files
 - Editor: Currency, gems, tools, and construction-material categories
