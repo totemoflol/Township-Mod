@@ -44,9 +44,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           APK="android-client/app/build/outputs/apk/debug/app-debug.apk"
-          TAG="tot-tools-v1.0.0"
+          TAG="tot-tools-v1.1.0"
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "$APK#ToT-Tools.apk" --clobber
           else
-            gh release create "$TAG" "$APK#ToT-Tools.apk" --title "ToT Tools v1.0.0" --notes "Android APK for ToT Tools. Android 10 or newer."
+            gh release create "$TAG" "$APK#ToT-Tools.apk" --title "ToT Tools v1.1.0" --notes "ToT Tools Android category editor. Android 10 or newer."
           fi
