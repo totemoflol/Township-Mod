@@ -17,8 +17,8 @@ type LicenseRow = {
   note: string | null;
 };
 
-const KEY_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-const KEY_PATTERN = /^TOT_[A-HJ-NP-Z2-9]{6}_[A-HJ-NP-Z2-9]{6}_[A-HJ-NP-Z2-9]{6}$/;
+const KEY_ALPHABET = "ABCDEFGHJKLMNPQRSTUVWXYZ";
+const KEY_PATTERN = /^TOT_[A-HJ-NP-Z]{5}$/;
 
 function json(data: unknown, status = 200): Response {
   return new Response(JSON.stringify(data), {
@@ -48,13 +48,13 @@ function randomId(): string {
   return crypto.randomUUID();
 }
 
-function randomPart(length = 6): string {
+function randomPart(length = 5): string {
   const bytes = crypto.getRandomValues(new Uint8Array(length));
   return Array.from(bytes, (byte) => KEY_ALPHABET[byte % KEY_ALPHABET.length]).join("");
 }
 
 function generateLicenseKey(): string {
-  return `TOT_${randomPart()}_${randomPart()}_${randomPart()}`;
+  return `TOT_${randomPart(5)}`;
 }
 
 async function sha256(value: string): Promise<string> {
@@ -77,7 +77,7 @@ function normalizeKey(value: unknown): string {
 
 function maskedHint(key: string): string {
   const parts = key.split("_");
-  return parts.length === 4 ? `TOT_${parts[1]}_••••••_••••••` : "TOT_••••••";
+  return key.length === 9 ? `TOT_•••${key.slice(-2)}` : "TOT_•••••";
 }
 
 async function readBody(request: Request): Promise<Record<string, unknown> | null> {
