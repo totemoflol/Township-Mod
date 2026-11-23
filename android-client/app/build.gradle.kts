@@ -11,8 +11,8 @@ android {
         applicationId = "com.totemoflol.tottools"
         minSdk = 29
         targetSdk = 35
-        versionCode = 3
-        versionName = "0.2.0-beta"
+        versionCode = 4
+        versionName = "0.3.0-beta"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
