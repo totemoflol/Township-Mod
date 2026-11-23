@@ -1,0 +1,10 @@
+name = "tot-tools-license-api"
+main = "src/index.ts"
+compatibility_date = "2026-11-20"
+workers_dev = true
+
+[[d1_databases]]
+binding = "LICENSE_DB"
+database_name = "tot-tools-licenses"
+database_id = "REPLACE_WITH_DATABASE_ID"
+migrations_dir = "migrations"
