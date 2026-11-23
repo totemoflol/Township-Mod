@@ -1,4 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
     <application android:allowBackup="false" android:icon="@mipmap/tot_tools_icon" android:roundIcon="@mipmap/tot_tools_icon" android:label="ToT Tools" android:supportsRtl="true" android:theme="@android:style/Theme.Material.NoActionBar">
         <activity android:name=".MainActivity" android:configChanges="orientation|screenSize|screenLayout" android:exported="true">
             <intent-filter>
