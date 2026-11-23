@@ -8,7 +8,7 @@ on:
       - '.github/workflows/auth-test-build.yml'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     name: Build auth test APK
@@ -39,3 +39,14 @@ jobs:
           path: android-client/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30
+      - name: Publish test APK as a prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp "android-client/app/build/outputs/apk/debug/app-debug.apk" "ToT-Tools-Auth-Test.apk"
+          TAG="tot-tools-auth-test-0.4.0"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "ToT-Tools-Auth-Test.apk" --clobber
+          else
+            gh release create "$TAG" "ToT-Tools-Auth-Test.apk" --title "ToT Tools Auth Test 0.4.0" --notes "Separate test build for local authentication and premium feature-gating tests. Uses demo-only local accounts. No real login server or payment processing is included. Do not use as a paid production app." --prerelease
+          fi
