@@ -1,0 +1,919 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+	<Version version="40.0.1" FVer="4000" timestamp="1794885077" gameId="[REDACTED]" />
+	<AWS cityId="[REDACTED]" token="[REDACTED]" />
+	<Friends updated="1794853959.9233560562133789" />
+	<FollowedFriends>
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" pic="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" flw="[REDACTED]" as="[REDACTED]" as1="[REDACTED]" as2="[REDACTED]" av="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]">
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+		</friend>
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" flw="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+	</FollowedFriends>
+	<Followers />
+	<RandomFriends remain_time="4887.9087332338094711" end_time="1794889964.4007461071014404" dirty="0">
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]">
+			<box data="[REDACTED: gift sender metadata]" />
+		</friend>
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" flw="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" pic="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" flw="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+	</RandomFriends>
+	<LastRandomFriends>
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+		<friend id="[REDACTED]" city_name="[REDACTED]" />
+	</LastRandomFriends>
+	<LastHelpers />
+	<ClanMembers />
+	<NewFriends>
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" flw="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]" />
+		<friend city_id="[REDACTED]" city_name="[REDACTED]" pic="[REDACTED]" name="[REDACTED]" level="[REDACTED]" xp="[REDACTED]" likes="[REDACTED]" fver="[REDACTED]" lang="[REDACTED]" flw="[REDACTED]" as="[REDACTED]" as1="[REDACTED]" as2="[REDACTED]" av="[REDACTED]" help="[REDACTED]" fetched_city_ver="[REDACTED]" bc="[REDACTED]">
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+			<box data="[REDACTED: gift sender metadata]" />
+		</friend>
+	</NewFriends>
+	<FbPicUrlMap />
+	<ClanaData>
+		<FriendsInfo />
+		<FriendsClanInfo />
+		<ClanRegataResult />
+	</ClanaData>
+	<AirTop />
+	<Events>
+		<EventCenter />
+		<PvpCenter />
+	</Events>
+	<RegataCenter />
+	<SeasonPassCenter />
+	<SeasonTicketCenter>
+		<SeasonTicket id="830">
+			<LocalVars />
+		</SeasonTicket>
+	</SeasonTicketCenter>
+	<QuestsBook />
+	<SaleWindowsPackageManager />
+	<UnavailableWindows />
+	<LevelUpWindow />
+	<PerksManager />
+	<BankOffersManager />
+	<PlayablesNew />
+	<RateUs />
+	<CherylTutorial />
+	<XSollaConnect />
+	<CouponsPriceProvider />
+	<CityOrdersAnalytic />
+	<CityMatch3CashAnalytic />
+	<MagicBeansCenter />
+	<CascadeEventCenter />
+	<HSCashOp>
+		<op t="1794813639" v="CashBalance(600, GameLoaded)" />
+		<op t="1794813664" v="SpendCash(25.0000000000000000, 1, purchase.pass.time.product.milk, result 575)" />
+		<op t="1794813667" v="SpendCash(25.0000000000000000, 1, purchase.pass.time.product.milk, result 550)" />
+		<op t="1794813668" v="SpendCash(25.0000000000000000, 1, purchase.pass.time.product.milk, result 525)" />
+		<op t="1794813674" v="AddCoins(100, LevelUp)" />
+		<op t="1794813674" v="AddCash(25, LevelUp, result 550)" />
+		<op t="1794813694" v="SpendCoins(125, 1, purchase.factory.bakery)" />
+		<op t="1794813707" v="SpendCash(34.0000000000000000, 1, purchase.pass.time.product.bread, result 516)" />
+		<op t="1794813708" v="AddCoins(150, LevelUp)" />
+		<op t="1794813708" v="AddCash(25, LevelUp, result 541)" />
+		<op t="1794813725" v="AddCoins(10, Order)" />
+		<op t="1794813802" v="CashBalance(541, GameLoaded)" />
+		<op t="1794815610" v="CashBalance(541, GameLoaded)" />
+		<op t="1794815648" v="SpendCoins(150, 1, purchase.factory.mill)" />
+		<op t="1794815653" v="SpendCoins(5, 1, purchase.house.house26)" />
+		<op t="1794815655" v="SpendCash(21.0000000000000000, 1, purchase.pass.time.build.house26, result 520)" />
+		<op t="1794816044" v="CashBalance(520, GameLoaded)" />
+		<op t="1794816053" v="SpendCoins(25, 1, purchase.community.store_101)" />
+		<op t="1794816054" v="SpendCash(24.0000000000000000, 1, purchase.pass.time.build.store_101, result 496)" />
+		<op t="1794816122" v="CashBalance(520, GameLoaded)" />
+		<op t="1794816149" v="CashBalance(520, GameLoaded)" />
+		<op t="1794816313" v="CashBalance(520, GameLoaded)" />
+		<op t="1794816391" v="AddCash(10000, collection, result 10520)" />
+		<op t="1794817102" v="CashBalance(10520, GameLoaded)" />
+		<op t="1794817274" v="CashBalance(10520, GameLoaded)" />
+		<op t="1794817312" v="AddCash(15000, collection_grand, result 25520)" />
+		<op t="1794817936" v="CashBalance(25520, GameLoaded)" />
+		<op t="1794818164" v="CashBalance(25520, GameLoaded)" />
+		<op t="1794818847" v="CashBalance(25520, GameLoaded)" />
+		<op t="1794853959" v="CashBalance(25520, GameLoaded)" />
+		<op t="1794885066" v="AddCoins(50, DailyBonus)" />
+		<op t="1794885074" v="AddCash(25, QuestFiller, result 25545)" />
+	</HSCashOp>
+	<ProductBalance MapOrderCounter="3">
+		<product name="bread" n="2" />
+		<product name="milk" n="3" />
+		<product name="wheat" n="3" />
+	</ProductBalance>
+	<LoggedInfo FB="0" WB="0" GC="0" APPLE="0" FBA="1" WBA="0" />
+	<RegataInfo mc="0" jn="0" />
+	<Valentine receivedIds="" />
+	<FriendshipDay receivedIds="" />
+	<PushNotifDeviceInfo abtests="ts_ios_gp_new_3910_new_mini_games:ts_ios_gp_new_3910_new_mini_games_control1" advId="[REDACTED]" bver="40.0.1" cityId="[REDACTED]" deviceToken="[REDACTED]" deviceType="[REDACTED]" fver="4000" gameId="[REDACTED]" geoip="[REDACTED]" lang="en" location="[REDACTED]" lvl="10" model="[REDACTED]" osver="10" platform="g" pname="[REDACTED]" tz="28800" timestamp="1794815612" />
+	<Minigames>
+		<Minigame id="Match3">
+			<LocalVars />
+		</Minigame>
+		<Minigame id="ParkingJam">
+			<LocalVars />
+		</Minigame>
+	</Minigames>
+	<DataStoreLocalCollection>
+		<DataElem name="GameFeatures" type="dataStore">
+			<DataElem name="PackageSystem" type="dataStore">
+				<DataElem name="CDSMetricManager" type="dataStore">
+					<DataElem name="downloadsEvents" type="array">
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Academy" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="1876822" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Academy" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Airport" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="3138806" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Airport" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="CascadeEventResourcesMine" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="5256464" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="CascadeEventResourcesMine" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="CascadeEventResourcesOre" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="525613" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="CascadeEventResourcesOre" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Collections" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="1474462" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Collections" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Digging" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="972405" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Digging" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="DiggingRenovation" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="19168498" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="DiggingRenovation" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="DuckFactory" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="4640312" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="DuckFactory" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="EventPvpMineResources" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="392947" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="EventPvpMineResources" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Feature_MergeOrder00" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="27601312" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Feature_MergeOrder00" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Feature_MergeOrderCommon" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="6501976" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Feature_MergeOrderCommon" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="HiddenFox" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="5296" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="HiddenFox" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Islands" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="15817195" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Islands" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="IslandsResources" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="6677087" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="IslandsResources" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="IslandsResources_sounds" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="6766954" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="IslandsResources_sounds" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Laboratory" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="1142070" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Laboratory" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LevelItems_51_" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="7890080" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LevelItems_51_" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LocationsRedesign_Balances" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="105686" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LocationsRedesign_Balances" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LocationsRedesign_Common" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="5048268" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LocationsRedesign_Common" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LocationsRedesign_Event1" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="32291606" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LocationsRedesign_Event1" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LocationsRedesign_Event2" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="37734914" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LocationsRedesign_Event2" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LocationsRedesign_Meta1" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="4677561" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LocationsRedesign_Meta1" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="LocationsRedesign_Meta2" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="8363122" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="LocationsRedesign_Meta2" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="MagicBeansResources" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="1457083" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="MagicBeansResources" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="MagicCauldron" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="18526544" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="MagicCauldron" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="MagicCauldronBalance" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="13469" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="MagicCauldronBalance" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="MagicCauldronColoring" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="708" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="MagicCauldronColoring" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Models_planes" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="572094" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Models_planes" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Models_ships" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="45727060" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Models_ships" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Museum" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="3868289" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Museum" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="MuseumNew" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="19754552" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="MuseumNew" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="OtterFactory" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="6166570" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="OtterFactory" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Playable07" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="8839868" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Playable07" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Playable08" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="9650760" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Playable08" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="PurrfectProgressMerge2" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="6175754" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="PurrfectProgressMerge2" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Smeltery" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="12134584" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Smeltery" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="SmelteryMint" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="1476486" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="SmelteryMint" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="StartingMiniGames_13" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="28289694" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="StartingMiniGames_13" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="Superboost" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="1635205" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="Superboost" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="TradeHouse" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="138174" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="TradeHouse" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="TrainRaceResources" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="7764878" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="TrainRaceResources" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="ZooResources" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="2332449" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="ZooResources" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="ZooResources_1_animal_cards" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="2591020" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="ZooResources_1_animal_cards" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="ZooResources_1_animal_gui" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="4535172" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="ZooResources_1_animal_gui" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="ZooResources_1_field" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="33288461" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="ZooResources_1_field" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="ZooResources_1_gui" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="2274213" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="ZooResources_1_gui" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+						<DataElem type="dataStore">
+							<DataElem name="first" type="string" value="ZooResources_1_sounds" />
+							<DataElem name="second" type="dataStore">
+								<DataElem name="ptr" type="dataStore">
+									<DataElem name="attempts" type="int" value="0" />
+									<DataElem name="downloadSize" type="int64" value="3188550" />
+									<DataElem name="downloadTime" type="int64" value="0" />
+									<DataElem name="downloadTimeFromSessionStart" type="int64" value="123680" />
+									<DataElem name="foregroundWaitTime" type="int64" value="0" />
+									<DataElem name="package" type="string" value="ZooResources_1_sounds" />
+									<DataElem name="packageVersion" type="string" value="1794328954" />
+									<DataElem name="preload" type="string" value="NotPreloaded" />
+								</DataElem>
+								<DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent" />
+							</DataElem>
+						</DataElem>
+					</DataElem>
+				</DataElem>
+			</DataElem>
+		</DataElem>
+	</DataStoreLocalCollection>
+	<OtherPlayerProfilesLogicFeatureComponent ProfilesCache="[REDACTED: cached player/clan profiles]" ClansCache="[REDACTED: cached player/clan profiles]" ProfilesToClanCache="[REDACTED: cached player/clan profiles]" />
+	<DragonNestTokensAnalytic />
+	<TrainJourneyTokensAnalytic />
+</root>
