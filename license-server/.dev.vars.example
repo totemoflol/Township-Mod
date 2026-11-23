@@ -1,0 +1,4 @@
+# Copy this file to .dev.vars for local development.
+# Use long random values. Never commit .dev.vars.
+ADMIN_TOKEN=replace-with-a-long-random-admin-token
+LICENSE_PEPPER=replace-with-a-different-long-random-pepper
