@@ -1,0 +1,14 @@
+{
+  "name": "tot-tools-license-server",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "wrangler dev",
+    "db:create": "wrangler d1 create tot-tools-licenses",
+    "db:migrate": "wrangler d1 migrations apply LICENSE_DB --remote",
+    "deploy": "npm run db:migrate && wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
