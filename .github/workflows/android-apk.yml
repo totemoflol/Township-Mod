@@ -11,7 +11,7 @@ permissions:
   contents: write
 jobs:
   build:
-    name: Build and publish APK
+    name: Build and publish signed APK
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -29,25 +29,49 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '8.9'
-      - name: Compile ToT Tools
+      - name: Restore Android signing key
+        env:
+          ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "::error::ANDROID_KEYSTORE_BASE64 secret is missing"
+            exit 1
+          fi
+          echo "$ANDROID_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/tottools-release.p12"
+          test -s "$RUNNER_TEMP/tottools-release.p12"
+          echo "ANDROID_KEYSTORE_PATH=$RUNNER_TEMP/tottools-release.p12" >> "$GITHUB_ENV"
+      - name: Build signed release APK
         working-directory: android-client
-        run: gradle --no-daemon :app:assembleDebug
+        env:
+          ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          ANDROID_KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          ANDROID_KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -z "$ANDROID_KEYSTORE_PASSWORD" ] || [ -z "$ANDROID_KEY_ALIAS" ] || [ -z "$ANDROID_KEY_PASSWORD" ]; then
+            echo "::error::One or more Android signing secrets are missing"
+            exit 1
+          fi
+          gradle --no-daemon :app:assembleRelease
+      - name: Verify APK signature
+        run: |
+          APK="android-client/app/build/outputs/apk/release/app-release.apk"
+          test -s "$APK"
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose "$APK"
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ToT-Tools-Android-APK
-          path: android-client/app/build/outputs/apk/debug/app-debug.apk
+          name: ToT-Tools-Android-Signed-APK
+          path: android-client/app/build/outputs/apk/release/app-release.apk
           if-no-files-found: error
           retention-days: 30
       - name: Publish APK to GitHub Releases
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          APK="android-client/app/build/outputs/apk/debug/app-debug.apk"
-          cp "$APK" "ToT-Tools.apk"
+          cp "android-client/app/build/outputs/apk/release/app-release.apk" "ToT-Tools.apk"
           TAG="tot-tools-beta-0.3.0"
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "ToT-Tools.apk" --clobber
           else
-            gh release create "$TAG" "ToT-Tools.apk" --title "ToT Tools Beta 0.3.0" --notes "Experimental beta build of ToT Tools. Android 10 or newer."
+            gh release create "$TAG" "ToT-Tools.apk" --title "ToT Tools Beta 0.3.0" --notes "Experimental beta build of ToT Tools. Android 10 or newer. Signed release APK."
           fi
