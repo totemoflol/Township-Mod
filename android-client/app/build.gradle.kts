@@ -31,7 +31,7 @@ android {
         buildConfigField(
             "String",
             "LICENSE_API_URL",
-            "\\"\\\${licenseApiUrl.replace("\\\\", "\\\\\\\\").replace("\\"", "\\\\\\"")}\\"
+            "\"${licenseApiUrl.replace("\\", "\\\\").replace("\"", "\\\"")}\""
         )
     }
     signingConfigs {
