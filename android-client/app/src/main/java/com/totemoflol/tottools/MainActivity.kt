@@ -210,7 +210,7 @@ private fun ToTToolsApp() {
                             Text("TOWNSHIP TOOLKIT", style = MaterialTheme.typography.labelSmall, color = Mint, letterSpacing = 2.sp)
                         }
                         Surface(shape = RoundedCornerShape(50), color = PanelAlt) {
-                            Text("BETA 0.2.0", Modifier.padding(horizontal = 12.dp, vertical = 7.dp), color = Mint, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                            Text("BETA 0.3.0", Modifier.padding(horizontal = 12.dp, vertical = 7.dp), color = Mint, fontSize = 11.sp, fontWeight = FontWeight.Bold)
                         }
                     }
 
