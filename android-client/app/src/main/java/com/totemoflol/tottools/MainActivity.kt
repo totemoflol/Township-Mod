@@ -106,6 +106,8 @@ private fun ToTToolsApp() {
             } catch (e: Exception) {
                 authMessage = e.message ?: "Licence verification failed."
             }
+        } else {
+            authMessage = ""
         }
         authBusy = false
     }
