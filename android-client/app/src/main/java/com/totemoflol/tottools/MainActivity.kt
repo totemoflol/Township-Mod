@@ -63,6 +63,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 private fun ToTToolsApp() {
     val context = LocalContext.current
+    var authSession by remember { mutableStateOf(TestAuthStore.restore(context)) }
     val scope = rememberCoroutineScope()
     val logoTransition = rememberInfiniteTransition(label = "brand-pulse")
     val logoScale by logoTransition.animateFloat(0.985f, 1.025f, infiniteRepeatable(tween(2600), RepeatMode.Reverse), label = "logo-scale")
@@ -137,7 +138,7 @@ private fun ToTToolsApp() {
                     }
                     report = result.first
                     status = if (result.second > 0) {
-                        "Save loaded. " + result.second + " supported values are ready to edit."
+                        "Save loaded. " + result.second + " supported values found."
                     } else {
                         "Save loaded, but no supported item values were found in this file."
                     }
@@ -184,6 +185,13 @@ private fun ToTToolsApp() {
         Surface(Modifier.fillMaxSize(), color = Ink) {
             Box(Modifier.fillMaxSize()) {
                 AmbientGreenBackground(Modifier.fillMaxSize())
+                if (authSession == null) {
+                    AuthTestScreen { email, password ->
+                        val signedIn = TestAuthStore.signIn(context, email, password)
+                        if (signedIn != null) authSession = signedIn
+                        signedIn != null
+                    }
+                } else {
             Column(
                 Modifier.fillMaxSize().verticalScroll(rememberScrollState())
                     .padding(horizontal = 17.dp, vertical = 20.dp),
@@ -209,8 +217,25 @@ private fun ToTToolsApp() {
                             Text("ToT Tools", style = MaterialTheme.typography.headlineMedium, fontWeight = FontWeight.ExtraBold)
                             Text("TOWNSHIP TOOLKIT", style = MaterialTheme.typography.labelSmall, color = Mint, letterSpacing = 2.sp)
                         }
-                        Surface(shape = RoundedCornerShape(50), color = PanelAlt) {
-                            Text("BETA 0.3.0", Modifier.padding(horizontal = 12.dp, vertical = 7.dp), color = Mint, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                        Column(horizontalAlignment = Alignment.End) {
+                            Surface(shape = RoundedCornerShape(50), color = PanelAlt) {
+                                Text("BETA 0.4.0 TEST", Modifier.padding(horizontal = 10.dp, vertical = 6.dp), color = Mint, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                            }
+                            Text(
+                                if (authSession?.hasPremium == true) "PREMIUM TEST" else "FREE TEST",
+                                color = Gold,
+                                fontSize = 9.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                            TextButton(
+                                onClick = {
+                                    TestAuthStore.signOut(context)
+                                    authSession = null
+                                    report = null
+                                    editedValues = emptyMap()
+                                },
+                                contentPadding = PaddingValues(horizontal = 4.dp, vertical = 0.dp)
+                            ) { Text("Sign out", fontSize = 10.sp) }
                         }
                     }
 
@@ -356,7 +381,26 @@ private fun ToTToolsApp() {
                                         shape = RoundedCornerShape(13.dp)
                                     )
 
-                                    if (visibleItems.isEmpty()) {
+                                    if (authSession?.hasPremium != true) {
+                                        Card(
+                                            colors = CardDefaults.cardColors(containerColor = PanelAlt),
+                                            border = BorderStroke(1.dp, Gold.copy(alpha = 0.55f)),
+                                            shape = RoundedCornerShape(14.dp)
+                                        ) {
+                                            Column(Modifier.padding(15.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
+                                                Text("PREMIUM EDITOR LOCKED", color = Gold, fontWeight = FontWeight.Bold)
+                                                Text(
+                                                    when (authSession?.access) {
+                                                        TestAccess.EXPIRED -> "This test licence is expired. Sign in with the premium test account to test active access."
+                                                        else -> "This account has free access. Sign in with the premium test account to test the editor."
+                                                    },
+                                                    color = Muted,
+                                                    fontSize = 12.sp,
+                                                    lineHeight = 17.sp
+                                                )
+                                            }
+                                        }
+                                    } else if (visibleItems.isEmpty()) {
                                         Text("No matching items in this category.", color = Muted, fontSize = 12.sp)
                                     } else {
                                         visibleItems.forEach { item ->
@@ -394,7 +438,7 @@ private fun ToTToolsApp() {
                                                 status = e.message ?: "Could not prepare the edited save."
                                             }
                                         },
-                                        enabled = data.encodedData != null && changedItems.isNotEmpty() && validChanges,
+                                        enabled = authSession?.hasPremium == true && data.encodedData != null && changedItems.isNotEmpty() && validChanges,
                                         modifier = Modifier.fillMaxWidth().height(51.dp),
                                         shape = RoundedCornerShape(14.dp)
                                     ) {
@@ -429,6 +473,7 @@ private fun ToTToolsApp() {
                     )
                 }
             }
+                }
             }
         }
     }
