@@ -8,7 +8,7 @@ on:
       - '.github/workflows/license-key-test-build.yml'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   build:
     name: Build licence test APK
@@ -36,3 +36,15 @@ jobs:
           path: android-client/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30
+      - name: Publish licence-key preview prerelease
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp "android-client/app/build/outputs/apk/debug/app-debug.apk" "ToT-Tools-Licence-Test.apk"
+          TAG="tot-tools-license-preview-0.4.0"
+          NOTES="Preview build for testing the TOT_XXXXX licence-key screen and one-device activation flow. IMPORTANT: the licence backend is not deployed yet in this preview; activation and key generation are not live. Do not use for sales or customer installs. The normal ToT Tools release is unchanged."
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "ToT-Tools-Licence-Test.apk" --clobber
+          else
+            gh release create "$TAG" "ToT-Tools-Licence-Test.apk" --title "ToT Tools Licence Preview 0.4.0" --notes "$NOTES" --prerelease
+          fi
