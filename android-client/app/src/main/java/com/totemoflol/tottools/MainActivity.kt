@@ -417,7 +417,8 @@ private fun ToTToolsApp() {
                                         shape = RoundedCornerShape(13.dp)
                                     )
 
-                                    if (visibleItems.isEmpty()) {                                        Text("No matching items in this category.", color = Muted, fontSize = 12.sp)
+                                    if (visibleItems.isEmpty()) {
+                                        Text("No matching items in this category.", color = Muted, fontSize = 12.sp)
                                     } else {
                                         visibleItems.forEach { item ->
                                             ItemEditorRow(
