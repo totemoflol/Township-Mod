@@ -6,6 +6,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
 import androidx.compose.animation.core.infiniteRepeatable
@@ -25,6 +26,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.geometry.Offset
@@ -59,6 +61,8 @@ class MainActivity : ComponentActivity() {
 private fun ToTToolsApp() {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
+    val logoTransition = rememberInfiniteTransition(label = "brand-pulse")
+    val logoScale by logoTransition.animateFloat(0.985f, 1.025f, infiniteRepeatable(tween(2600), RepeatMode.Reverse), label = "logo-scale")
     var report by remember { mutableStateOf<DecodeReport?>(null) }
     var status by remember { mutableStateOf("Import a Township save to begin.") }
     var busy by remember { mutableStateOf(false) }
@@ -170,7 +174,7 @@ private fun ToTToolsApp() {
                             androidx.compose.foundation.Image(
                                 painter = painterResource(R.mipmap.tot_tools_icon),
                                 contentDescription = "ToT Tools emblem",
-                                modifier = Modifier.size(58.dp).clip(CircleShape)
+                                modifier = Modifier.size(58.dp).clip(CircleShape).graphicsLayer { scaleX = logoScale; scaleY = logoScale }
                             )
                         }
                         Column(Modifier.weight(1f)) {
@@ -378,7 +382,7 @@ private fun ItemEditorRow(item: EditableItem, value: String, onValueChange: (Str
         color = PanelAlt,
         shape = RoundedCornerShape(14.dp),
         border = BorderStroke(1.dp, Line),
-        modifier = Modifier.fillMaxWidth()
+        modifier = Modifier.fillMaxWidth().animateContentSize()
     ) {
         Row(
             Modifier.padding(horizontal = 12.dp, vertical = 10.dp),
@@ -406,13 +410,13 @@ private fun ItemEditorRow(item: EditableItem, value: String, onValueChange: (Str
 private fun SectionHeading(title: String, subtitle: String) {
     Row(verticalAlignment = Alignment.Bottom, modifier = Modifier.fillMaxWidth()) {
         Text(title, color = Mint, style = MaterialTheme.typography.labelMedium, letterSpacing = 1.4.sp, modifier = Modifier.weight(1f))
-        Text(subtitle, color = Muted, fontSize = 11.sp)
+        if (subtitle.isNotBlank()) Text(subtitle, color = Muted, fontSize = 11.sp)
     }
 }
 
 @Composable
 private fun FeatureTile(title: String, modifier: Modifier = Modifier) {
-    Surface(modifier, color = Panel.copy(alpha = 0.92f), shape = RoundedCornerShape(14.dp), border = BorderStroke(1.dp, Line)) {
+    Surface(modifier.animateContentSize(), color = Panel.copy(alpha = 0.92f), shape = RoundedCornerShape(14.dp), border = BorderStroke(1.dp, Line)) {
         Box(Modifier.padding(horizontal = 14.dp, vertical = 17.dp), contentAlignment = Alignment.CenterStart) {
             Text(title, fontWeight = FontWeight.Bold, fontSize = 12.sp, letterSpacing = 1.2.sp, color = Mint)
         }
