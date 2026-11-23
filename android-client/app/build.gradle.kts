@@ -24,6 +24,7 @@ android {
         targetSdk = 35
         versionCode = 4
         versionName = "0.3.0-beta"
+        resValue("string", "app_name", "ToT Tools")
     }
     signingConfigs {
         if (hasReleaseSigning) {
@@ -37,6 +38,11 @@ android {
         }
     }
     buildTypes {
+        getByName("debug") {
+            applicationIdSuffix = ".test"
+            versionNameSuffix = "-auth-test"
+            resValue("string", "app_name", "ToT Tools TEST")
+        }
         getByName("release") {
             isMinifyEnabled = false
             if (hasReleaseSigning) {
