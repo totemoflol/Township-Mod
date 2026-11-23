@@ -46,5 +46,7 @@ jobs:
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "ToT-Tools-Licence-Test.apk" --clobber
           else
-            gh release create "$TAG" "ToT-Tools-Licence-Test.apk" --title "ToT Tools Licence Preview 0.4.0" --notes "$NOTES" --prerelease
+            gh release create "$TAG" "ToT-Tools-Licence-Test.apk" --title "ToT Tools Licence Preview 0.4.0" --notes "$NOTES" --prerelease --target "$GITHUB_SHA"
           fi
+          git tag -f "$TAG" "$GITHUB_SHA"
+          git push --force origin "refs/tags/$TAG"
