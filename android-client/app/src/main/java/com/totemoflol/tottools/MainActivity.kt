@@ -6,6 +6,12 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.*
@@ -20,6 +26,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -141,6 +150,8 @@ private fun ToTToolsApp() {
         )
     ) {
         Surface(Modifier.fillMaxSize(), color = Ink) {
+            Box(Modifier.fillMaxSize()) {
+                AmbientGreenBackground(Modifier.fillMaxSize())
             Column(
                 Modifier.fillMaxSize().verticalScroll(rememberScrollState())
                     .padding(horizontal = 17.dp, vertical = 20.dp),
@@ -167,7 +178,7 @@ private fun ToTToolsApp() {
                             Text("TOWNSHIP TOOLKIT", style = MaterialTheme.typography.labelSmall, color = Mint, letterSpacing = 2.sp)
                         }
                         Surface(shape = RoundedCornerShape(50), color = PanelAlt) {
-                            Text("v1.1.0", Modifier.padding(horizontal = 12.dp, vertical = 7.dp), color = Muted, fontSize = 11.sp)
+                            Text("BETA 0.2.0", Modifier.padding(horizontal = 12.dp, vertical = 7.dp), color = Mint, fontSize = 11.sp, fontWeight = FontWeight.Bold)
                         }
                     }
 
@@ -338,14 +349,14 @@ private fun ToTToolsApp() {
                         }
                     }
 
-                    SectionHeading("TOOLS", "Built into this version")
+                    SectionHeading("FEATURES", "")
                     Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                        FeatureTile("Category editor", "Change supported values by group", Modifier.weight(1f))
-                        FeatureTile("Save export", "Create a separate edited copy", Modifier.weight(1f))
+                        FeatureTile("EDITOR", Modifier.weight(1f))
+                        FeatureTile("EXPORT", Modifier.weight(1f))
                     }
                     Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
-                        FeatureTile("Quick search", "Find a value in the current group", Modifier.weight(1f))
-                        FeatureTile("Local processing", "Your save stays on your device", Modifier.weight(1f))
+                        FeatureTile("SEARCH", Modifier.weight(1f))
+                        FeatureTile("LOCAL", Modifier.weight(1f))
                     }
                     Text(
                         "Keep an untouched backup before using an edited file. Game compatibility and acceptance are not guaranteed.",
@@ -355,6 +366,7 @@ private fun ToTToolsApp() {
                         lineHeight = 16.sp
                     )
                 }
+            }
             }
         }
     }
@@ -399,16 +411,37 @@ private fun SectionHeading(title: String, subtitle: String) {
 }
 
 @Composable
-private fun FeatureTile(title: String, detail: String, modifier: Modifier = Modifier) {
-    Surface(
-        modifier,
-        color = Panel,
-        shape = RoundedCornerShape(14.dp),
-        border = BorderStroke(1.dp, Line)
-    ) {
-        Column(Modifier.padding(13.dp), verticalArrangement = Arrangement.spacedBy(5.dp)) {
-            Text(title, fontWeight = FontWeight.SemiBold, fontSize = 13.sp)
-            Text(detail, color = Muted, fontSize = 10.sp, lineHeight = 14.sp)
+private fun FeatureTile(title: String, modifier: Modifier = Modifier) {
+    Surface(modifier, color = Panel.copy(alpha = 0.92f), shape = RoundedCornerShape(14.dp), border = BorderStroke(1.dp, Line)) {
+        Box(Modifier.padding(horizontal = 14.dp, vertical = 17.dp), contentAlignment = Alignment.CenterStart) {
+            Text(title, fontWeight = FontWeight.Bold, fontSize = 12.sp, letterSpacing = 1.2.sp, color = Mint)
+        }
+    }
+}
+
+@Composable
+private fun AmbientGreenBackground(modifier: Modifier = Modifier) {
+    val transition = rememberInfiniteTransition(label = "ambient-glow")
+    val drift by transition.animateFloat(0f, 1f, infiniteRepeatable(tween(9000), RepeatMode.Reverse), label = "glow-drift")
+    val pulse by transition.animateFloat(0.35f, 0.85f, infiniteRepeatable(tween(3200), RepeatMode.Reverse), label = "glow-pulse")
+    Canvas(modifier) {
+        val w = size.width
+        val h = size.height
+        drawRect(Ink)
+        val first = Offset(w * (0.08f + 0.10f * drift), h * 0.12f)
+        drawCircle(Brush.radialGradient(listOf(Green.copy(alpha = 0.18f * pulse), Color.Transparent), first, w * 0.78f), w * 0.78f, first)
+        val second = Offset(w * 0.95f, h * (0.60f - 0.08f * drift))
+        drawCircle(Brush.radialGradient(listOf(Mint.copy(alpha = 0.09f * pulse), Color.Transparent), second, w * 0.62f), w * 0.62f, second)
+        val ring = Offset(w * 0.88f, h * 0.26f)
+        val radius = w * (0.24f + 0.012f * drift)
+        drawCircle(Mint.copy(alpha = 0.055f * pulse), radius, ring, style = Stroke(width = 1.2.dp.toPx()))
+        drawCircle(Green.copy(alpha = 0.045f), radius * 1.28f, ring, style = Stroke(width = 1.dp.toPx()))
+        for (i in 0 until 22) {
+            val x = ((i * 73) % 997) / 997f * w
+            val y = ((i * 137) % 991) / 991f * h
+            val phase = (drift + i * 0.071f) % 1f
+            val alpha = (0.12f + 0.35f * (0.5f + 0.5f * kotlin.math.sin(phase * 6.283f))) * pulse
+            drawCircle(Mint.copy(alpha = alpha), (1.1f + (i % 3) * 0.55f).dp.toPx(), Offset(x, y))
         }
     }
 }
