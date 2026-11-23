@@ -1,0 +1,919 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <Version version="40.0.1" FVer="4000" timestamp="1794885077" gameId="[REDACTED]"/>
+  <AWS cityId="[REDACTED]" token="[REDACTED]"/>
+  <Friends updated="1794853959.9233560562133789"/>
+  <FollowedFriends>
+    <friend city_id="[REDACTED]" city_name="Durian9" pic="ava294" name="" level="158" xp="78857660" likes="125" fver="4000" lang="en" flw="86" as="90813" as1="90735" as2="90565" av="20773" help="[{&quot;order_id&quot;:&quot;17112026-020735-c5e&quot;,&quot;product_count&quot;:1,&quot;product_id&quot;:&quot;carrot_hotdog&quot;,&quot;type&quot;:&quot;train&quot;}]" fetched_city_ver="0" bc="2">
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;2004&quot;,&quot;pic&quot;:&quot;fBMzE2NTgxMjE3NjoxMDoxOjo0&quot;},&quot;order_id&quot;:&quot;16112026-161841-ZOB&quot;,&quot;time&quot;:1794846037,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;2004&quot;,&quot;pic&quot;:&quot;fBMzE2NTgxMjE3NjoxMDoxOjo0&quot;},&quot;order_id&quot;:&quot;16112026-161845-fIK&quot;,&quot;time&quot;:1794846036,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;tamil nadu&quot;,&quot;pic&quot;:&quot;ava2&quot;},&quot;order_id&quot;:&quot;17112026-020734-xpa&quot;,&quot;time&quot;:1794882318,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;tamil nadu&quot;,&quot;pic&quot;:&quot;ava2&quot;},&quot;order_id&quot;:&quot;17112026-020733-Fwo&quot;,&quot;time&quot;:1794882320,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;air_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;Kritibloom&quot;,&quot;pic&quot;:&quot;ava39&quot;},&quot;order_id&quot;:&quot;16112026-134207-IZS&quot;,&quot;pos&quot;:2,&quot;time&quot;:1794882679,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;air_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;Kritibloom&quot;,&quot;pic&quot;:&quot;ava39&quot;},&quot;order_id&quot;:&quot;16112026-134207-C7Y&quot;,&quot;pos&quot;:0,&quot;time&quot;:1794882681,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;air_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;Kritibloom&quot;,&quot;pic&quot;:&quot;ava39&quot;},&quot;order_id&quot;:&quot;16112026-134207-nmV&quot;,&quot;pos&quot;:1,&quot;time&quot;:1794882683,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;tapan&quot;,&quot;pic&quot;:&quot;ava54&quot;},&quot;order_id&quot;:&quot;17112026-020735-c5e&quot;,&quot;time&quot;:1794884187,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+    </friend>
+    <friend city_id="[REDACTED]" city_name="Totemoflol" name="" level="10" xp="2623" likes="100" fver="4000" lang="en" flw="1" help="" fetched_city_ver="0" bc="46"/>
+  </FollowedFriends>
+  <Followers/>
+  <RandomFriends remain_time="4887.9087332338094711" end_time="1794889964.4007461071014404" dirty="0">
+    <friend city_id="[REDACTED]" city_name="kanna" name="" level="8" xp="1445" likes="0" fver="4000" lang="ja" help="" fetched_city_ver="0" bc="1">
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;kanna&quot;},&quot;order_id&quot;:&quot;16112026-224334-wHW&quot;,&quot;time&quot;:1794869022,&quot;to&quot;:&quot;GDafzQ1vzC&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+    </friend>
+    <friend city_id="[REDACTED]" city_name="Jem" name="" level="17" xp="19100" likes="0" fver="4000" lang="en" help="" fetched_city_ver="0" bc="-1"/>
+    <friend city_id="[REDACTED]" city_name="Farmland" name="" level="8" xp="1227" likes="0" fver="4000" lang="en" help="" fetched_city_ver="0" bc="-1"/>
+    <friend city_id="[REDACTED]" city_name="YORKSII" name="" level="17" xp="19460" likes="0" fver="4000" lang="id" flw="1" help="" fetched_city_ver="0" bc="-1"/>
+    <friend city_id="[REDACTED]" city_name="Township" pic="ava19" name="" level="7" xp="1082" likes="0" fver="4000" lang="en" flw="4" help="" fetched_city_ver="0" bc="-1"/>
+    <friend city_id="[REDACTED]" city_name="Kaleb" name="" level="6" xp="688" likes="0" fver="4000" lang="en" help="" fetched_city_ver="0" bc="-1"/>
+    <friend city_id="[REDACTED]" city_name="Township" name="" level="10" xp="2718" likes="0" fver="4000" lang="en" help="" fetched_city_ver="0" bc="-1"/>
+  </RandomFriends>
+  <LastRandomFriends>
+    <friend id="imnTJ5wSiC"/>
+    <friend id="T3jb5CvJBk"/>
+    <friend id="NMZazOfSFh"/>
+    <friend id="9Xljh570hT"/>
+    <friend id="0N8Ca3GL1w"/>
+    <friend id="ohQGarsPxc"/>
+    <friend id="rAciYBXeo9"/>
+    <friend id="2Z8ufyq6dy"/>
+    <friend id="37tN7KKyxv"/>
+    <friend id="SLYBJhfaA6"/>
+    <friend id="bpRIJ6WMaX"/>
+    <friend id="LzmX6bxn3s"/>
+    <friend id="Kqx8hP6zEp"/>
+    <friend id="OIvJCZ2p0O"/>
+    <friend id="GDafzQ1vzC" city_name="kanna"/>
+    <friend id="EwRKqEuDZm" city_name="Jem"/>
+    <friend id="koD8PM5hcs" city_name="Farmland"/>
+    <friend id="EJvwwVb2Ba" city_name="YORKSII"/>
+    <friend id="q6Re9xUmYc" city_name="Township"/>
+    <friend id="zK3CFGi4YQ" city_name="Kaleb"/>
+    <friend id="7SQRR4gw2Z" city_name="Township"/>
+  </LastRandomFriends>
+  <LastHelpers/>
+  <ClanMembers/>
+  <NewFriends>
+    <friend city_id="[REDACTED]" city_name="Totemoflol" name="" level="10" xp="2623" likes="100" fver="4000" lang="en" flw="1" help="" fetched_city_ver="0" bc="46"/>
+    <friend city_id="[REDACTED]" city_name="Durian9" pic="ava294" name="" level="158" xp="78857660" likes="125" fver="4000" lang="en" flw="86" as="90813" as1="90735" as2="90565" av="20773" help="[{&quot;order_id&quot;:&quot;17112026-020735-c5e&quot;,&quot;product_count&quot;:1,&quot;product_id&quot;:&quot;carrot_hotdog&quot;,&quot;type&quot;:&quot;train&quot;}]" fetched_city_ver="0" bc="2">
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;2004&quot;,&quot;pic&quot;:&quot;fBMzE2NTgxMjE3NjoxMDoxOjo0&quot;},&quot;order_id&quot;:&quot;16112026-161841-ZOB&quot;,&quot;time&quot;:1794846037,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;2004&quot;,&quot;pic&quot;:&quot;fBMzE2NTgxMjE3NjoxMDoxOjo0&quot;},&quot;order_id&quot;:&quot;16112026-161845-fIK&quot;,&quot;time&quot;:1794846036,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;tamil nadu&quot;,&quot;pic&quot;:&quot;ava2&quot;},&quot;order_id&quot;:&quot;17112026-020734-xpa&quot;,&quot;time&quot;:1794882318,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;tamil nadu&quot;,&quot;pic&quot;:&quot;ava2&quot;},&quot;order_id&quot;:&quot;17112026-020733-Fwo&quot;,&quot;time&quot;:1794882320,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;air_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;Kritibloom&quot;,&quot;pic&quot;:&quot;ava39&quot;},&quot;order_id&quot;:&quot;16112026-134207-IZS&quot;,&quot;pos&quot;:2,&quot;time&quot;:1794882679,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;air_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;Kritibloom&quot;,&quot;pic&quot;:&quot;ava39&quot;},&quot;order_id&quot;:&quot;16112026-134207-C7Y&quot;,&quot;pos&quot;:0,&quot;time&quot;:1794882681,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;air_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;Kritibloom&quot;,&quot;pic&quot;:&quot;ava39&quot;},&quot;order_id&quot;:&quot;16112026-134207-nmV&quot;,&quot;pos&quot;:1,&quot;time&quot;:1794882683,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+      <box data="{&quot;box_type&quot;:&quot;train_box&quot;,&quot;from&quot;:{&quot;city_id&quot;:&quot;[REDACTED]&quot;,&quot;friend_city_name&quot;:&quot;tapan&quot;,&quot;pic&quot;:&quot;ava54&quot;},&quot;order_id&quot;:&quot;17112026-020735-c5e&quot;,&quot;time&quot;:1794884187,&quot;to&quot;:&quot;ztQqq7Phyx&quot;,&quot;type&quot;:&quot;box&quot;}"/>
+    </friend>
+  </NewFriends>
+  <FbPicUrlMap/>
+  <ClanaData>
+    <FriendsInfo/>
+    <FriendsClanInfo/>
+    <ClanRegataResult/>
+  </ClanaData>
+  <AirTop/>
+  <Events>
+    <EventCenter/>
+    <PvpCenter/>
+  </Events>
+  <RegataCenter/>
+  <SeasonPassCenter/>
+  <SeasonTicketCenter>
+    <SeasonTicket id="830">
+      <LocalVars/>
+    </SeasonTicket>
+  </SeasonTicketCenter>
+  <QuestsBook/>
+  <SaleWindowsPackageManager/>
+  <UnavailableWindows/>
+  <LevelUpWindow/>
+  <PerksManager/>
+  <BankOffersManager/>
+  <PlayablesNew/>
+  <RateUs/>
+  <CherylTutorial/>
+  <XSollaConnect/>
+  <CouponsPriceProvider/>
+  <CityOrdersAnalytic/>
+  <CityMatch3CashAnalytic/>
+  <MagicBeansCenter/>
+  <CascadeEventCenter/>
+  <HSCashOp>
+    <op t="1794813639" v="CashBalance(600, GameLoaded)"/>
+    <op t="1794813664" v="SpendCash(25.0000000000000000, 1, purchase.pass.time.product.milk, result 575)"/>
+    <op t="1794813667" v="SpendCash(25.0000000000000000, 1, purchase.pass.time.product.milk, result 550)"/>
+    <op t="1794813668" v="SpendCash(25.0000000000000000, 1, purchase.pass.time.product.milk, result 525)"/>
+    <op t="1794813674" v="AddCoins(100, LevelUp)"/>
+    <op t="1794813674" v="AddCash(25, LevelUp, result 550)"/>
+    <op t="1794813694" v="SpendCoins(125, 1, purchase.factory.bakery)"/>
+    <op t="1794813707" v="SpendCash(34.0000000000000000, 1, purchase.pass.time.product.bread, result 516)"/>
+    <op t="1794813708" v="AddCoins(150, LevelUp)"/>
+    <op t="1794813708" v="AddCash(25, LevelUp, result 541)"/>
+    <op t="1794813725" v="AddCoins(10, Order)"/>
+    <op t="1794813802" v="CashBalance(541, GameLoaded)"/>
+    <op t="1794815610" v="CashBalance(541, GameLoaded)"/>
+    <op t="1794815648" v="SpendCoins(150, 1, purchase.factory.mill)"/>
+    <op t="1794815653" v="SpendCoins(5, 1, purchase.house.house26)"/>
+    <op t="1794815655" v="SpendCash(21.0000000000000000, 1, purchase.pass.time.build.house26, result 520)"/>
+    <op t="1794816044" v="CashBalance(520, GameLoaded)"/>
+    <op t="1794816053" v="SpendCoins(25, 1, purchase.community.store_101)"/>
+    <op t="1794816054" v="SpendCash(24.0000000000000000, 1, purchase.pass.time.build.store_101, result 496)"/>
+    <op t="1794816122" v="CashBalance(520, GameLoaded)"/>
+    <op t="1794816149" v="CashBalance(520, GameLoaded)"/>
+    <op t="1794816313" v="CashBalance(520, GameLoaded)"/>
+    <op t="1794816391" v="AddCash(10000, collection, result 10520)"/>
+    <op t="1794817102" v="CashBalance(10520, GameLoaded)"/>
+    <op t="1794817274" v="CashBalance(10520, GameLoaded)"/>
+    <op t="1794817312" v="AddCash(15000, collection_grand, result 25520)"/>
+    <op t="1794817936" v="CashBalance(25520, GameLoaded)"/>
+    <op t="1794818164" v="CashBalance(25520, GameLoaded)"/>
+    <op t="1794818847" v="CashBalance(25520, GameLoaded)"/>
+    <op t="1794853959" v="CashBalance(25520, GameLoaded)"/>
+    <op t="1794885066" v="AddCoins(50, DailyBonus)"/>
+    <op t="1794885074" v="AddCash(25, QuestFiller, result 25545)"/>
+  </HSCashOp>
+  <ProductBalance MapOrderCounter="3">
+    <product name="bread" n="2"/>
+    <product name="milk" n="3"/>
+    <product name="wheat" n="3"/>
+  </ProductBalance>
+  <LoggedInfo FB="0" WB="0" GC="0" APPLE="0" FBA="1" WBA="0"/>
+  <RegataInfo mc="0" jn="0"/>
+  <Valentine receivedIds=""/>
+  <FriendshipDay receivedIds=""/>
+  <PushNotifDeviceInfo abtests="ts_ios_gp_new_3910_new_mini_games:ts_ios_gp_new_3910_new_mini_games_control1" advId="[REDACTED]" bver="40.0.1" cityId="[REDACTED]" deviceToken="[REDACTED]" deviceType="Pixel 4 XL" fver="4000" gameId="[REDACTED]" geoip="SG" lang="en" location="US" lvl="10" model="Pixel 4 XL" osver="10" platform="g" pname="BJDHCMAIN" tz="28800" timestamp="1794815612"/>
+  <Minigames>
+    <Minigame id="Match3">
+      <LocalVars/>
+    </Minigame>
+    <Minigame id="ParkingJam">
+      <LocalVars/>
+    </Minigame>
+  </Minigames>
+  <DataStoreLocalCollection>
+    <DataElem name="GameFeatures" type="dataStore">
+      <DataElem name="PackageSystem" type="dataStore">
+        <DataElem name="CDSMetricManager" type="dataStore">
+          <DataElem name="downloadsEvents" type="array">
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Academy"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="1876822"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Academy"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Airport"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="3138806"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Airport"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="CascadeEventResourcesMine"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="5256464"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="CascadeEventResourcesMine"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="CascadeEventResourcesOre"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="525613"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="CascadeEventResourcesOre"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Collections"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="1474462"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Collections"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Digging"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="972405"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Digging"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="DiggingRenovation"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="19168498"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="DiggingRenovation"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="DuckFactory"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="4640312"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="DuckFactory"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="EventPvpMineResources"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="392947"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="EventPvpMineResources"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Feature_MergeOrder00"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="27601312"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Feature_MergeOrder00"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Feature_MergeOrderCommon"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="6501976"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Feature_MergeOrderCommon"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="HiddenFox"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="5296"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="HiddenFox"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Islands"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="15817195"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Islands"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="IslandsResources"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="6677087"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="IslandsResources"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="IslandsResources_sounds"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="6766954"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="IslandsResources_sounds"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Laboratory"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="1142070"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Laboratory"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LevelItems_51_"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="7890080"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LevelItems_51_"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LocationsRedesign_Balances"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="105686"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LocationsRedesign_Balances"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LocationsRedesign_Common"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="5048268"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LocationsRedesign_Common"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LocationsRedesign_Event1"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="32291606"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LocationsRedesign_Event1"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LocationsRedesign_Event2"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="37734914"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LocationsRedesign_Event2"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LocationsRedesign_Meta1"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="4677561"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LocationsRedesign_Meta1"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="LocationsRedesign_Meta2"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="8363122"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="LocationsRedesign_Meta2"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="MagicBeansResources"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="1457083"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="MagicBeansResources"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="MagicCauldron"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="18526544"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="MagicCauldron"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="MagicCauldronBalance"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="13469"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="MagicCauldronBalance"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="MagicCauldronColoring"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="708"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="MagicCauldronColoring"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Models_planes"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="572094"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Models_planes"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Models_ships"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="45727060"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Models_ships"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Museum"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="3868289"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Museum"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="MuseumNew"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="19754552"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="MuseumNew"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="OtterFactory"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="6166570"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="OtterFactory"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Playable07"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="8839868"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Playable07"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Playable08"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="9650760"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Playable08"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="PurrfectProgressMerge2"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="6175754"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="PurrfectProgressMerge2"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Smeltery"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="12134584"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Smeltery"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="SmelteryMint"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="1476486"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="SmelteryMint"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="StartingMiniGames_13"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="28289694"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="StartingMiniGames_13"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="Superboost"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="1635205"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="Superboost"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="TradeHouse"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="138174"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="TradeHouse"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="TrainRaceResources"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="7764878"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="TrainRaceResources"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="ZooResources"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="2332449"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="ZooResources"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="ZooResources_1_animal_cards"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="2591020"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="ZooResources_1_animal_cards"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="ZooResources_1_animal_gui"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="4535172"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="ZooResources_1_animal_gui"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="ZooResources_1_field"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="33288461"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="ZooResources_1_field"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="ZooResources_1_gui"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="2274213"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="ZooResources_1_gui"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+            <DataElem type="dataStore">
+              <DataElem name="first" type="string" value="ZooResources_1_sounds"/>
+              <DataElem name="second" type="dataStore">
+                <DataElem name="ptr" type="dataStore">
+                  <DataElem name="attempts" type="int" value="0"/>
+                  <DataElem name="downloadSize" type="int64" value="3188550"/>
+                  <DataElem name="downloadTime" type="int64" value="0"/>
+                  <DataElem name="downloadTimeFromSessionStart" type="int64" value="123680"/>
+                  <DataElem name="foregroundWaitTime" type="int64" value="0"/>
+                  <DataElem name="package" type="string" value="ZooResources_1_sounds"/>
+                  <DataElem name="packageVersion" type="string" value="1794328954"/>
+                  <DataElem name="preload" type="string" value="NotPreloaded"/>
+                </DataElem>
+                <DataElem name="type" type="string" value="cDSMetricManager::PackageDownloadEvent"/>
+              </DataElem>
+            </DataElem>
+          </DataElem>
+        </DataElem>
+      </DataElem>
+    </DataElem>
+  </DataStoreLocalCollection>
+  <OtherPlayerProfilesLogicFeatureComponent ProfilesCache="[{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava21&quot;},&quot;cityname&quot;:&quot;Jack&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;gold&quot;},&quot;level&quot;:0,&quot;registerDate&quot;:1794853961,&quot;saveId&quot;:&quot;Miner&quot;,&quot;stats&quot;:{&quot;ranksEarned&quot;:[]}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Fiona Lim Gao Jie&quot;,&quot;level&quot;:12,&quot;registerDate&quot;:1706247595,&quot;saveId&quot;:&quot;KmUQZduGD1&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:83,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:1,&quot;levelM3&quot;:110,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava44&quot;},&quot;cityname&quot;:&quot;anber&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;violet&quot;},&quot;level&quot;:28,&quot;registerDate&quot;:1772954559,&quot;saveId&quot;:&quot;nQzPK7m2Gv&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:5,&quot;firstAttemptM3Levels&quot;:20,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:25,&quot;levelM3&quot;:44,&quot;likesReceived&quot;:3,&quot;livesSent&quot;:41,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Thanatos&quot;,&quot;level&quot;:12,&quot;registerDate&quot;:1794777363,&quot;saveId&quot;:&quot;4C0Znc9SXj&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:34,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:1,&quot;levelM3&quot;:46,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:1,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava31&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_base&quot;},&quot;cityname&quot;:&quot;Leah&quot;,&quot;level&quot;:54,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1728653180,&quot;saveId&quot;:&quot;TPLKlrfiGT&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:86,&quot;firstAttemptM3Levels&quot;:1060,&quot;fullCardCollections&quot;:1,&quot;fullCardSets&quot;:24,&quot;helpSent&quot;:3,&quot;levelM3&quot;:1521,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:178,&quot;ranksEarned&quot;:[&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:35}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava6&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;Emk&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;pumpkin&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_11&quot;},&quot;level&quot;:50,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_grand&quot;},&quot;registerDate&quot;:1784308886,&quot;saveId&quot;:&quot;msHc4GqMYl&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:85,&quot;firstAttemptM3Levels&quot;:4937,&quot;fullCardCollections&quot;:5,&quot;fullCardSets&quot;:84,&quot;helpSent&quot;:39,&quot;levelM3&quot;:7547,&quot;likesReceived&quot;:6,&quot;livesSent&quot;:184,&quot;ranksEarned&quot;:[&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_53_grand&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_54_grand&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_55_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_56_grand&quot;,&quot;EXP_Rank_57_base&quot;,&quot;EXP_Rank_57_grand&quot;],&quot;regattaTasksCompleted&quot;:1177}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava380&quot;},&quot;cityname&quot;:&quot;Kath&quot;,&quot;level&quot;:87,&quot;registerDate&quot;:1757811388,&quot;saveId&quot;:&quot;O6n6GqHqOV&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:221,&quot;firstAttemptM3Levels&quot;:992,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:28,&quot;helpSent&quot;:400,&quot;levelM3&quot;:1490,&quot;likesReceived&quot;:13,&quot;livesSent&quot;:1224,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:1}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava154&quot;},&quot;cityname&quot;:&quot;比爾農莊&quot;,&quot;level&quot;:232,&quot;registerDate&quot;:1497698739,&quot;saveId&quot;:&quot;zUW1JTJ25r&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:878,&quot;firstAttemptM3Levels&quot;:2001,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:69,&quot;helpSent&quot;:21632,&quot;levelM3&quot;:2279,&quot;likesReceived&quot;:221,&quot;livesSent&quot;:1802,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:15228}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Princess&quot;,&quot;level&quot;:30,&quot;registerDate&quot;:1792837850,&quot;saveId&quot;:&quot;4EPkUcOZ4j&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:9,&quot;firstAttemptM3Levels&quot;:0,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:2,&quot;helpSent&quot;:2,&quot;levelM3&quot;:1,&quot;likesReceived&quot;:3,&quot;livesSent&quot;:217,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:1}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava2&quot;},&quot;cityname&quot;:&quot;DHANUSH&quot;,&quot;level&quot;:22,&quot;registerDate&quot;:1789464563,&quot;saveId&quot;:&quot;LsLMbtJE9S&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:21,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:1,&quot;helpSent&quot;:2,&quot;levelM3&quot;:30,&quot;likesReceived&quot;:1,&quot;livesSent&quot;:8,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;fBMzE2NjI6MjczPzQ1Nzo5Nzg4&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;kini aldo&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;train&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_10&quot;},&quot;level&quot;:62,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1778627784,&quot;saveId&quot;:&quot;Tq03ESPp2r&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:8,&quot;firstAttemptM3Levels&quot;:5936,&quot;fullCardCollections&quot;:8,&quot;fullCardSets&quot;:120,&quot;helpSent&quot;:346,&quot;levelM3&quot;:7607,&quot;likesReceived&quot;:7,&quot;livesSent&quot;:367,&quot;ranksEarned&quot;:[&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_51_grand&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_52_grand&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_53_grand&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_54_grand&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:1037}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava240&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_03_base&quot;},&quot;cityname&quot;:&quot;ThadXav&quot;,&quot;level&quot;:174,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1522506666,&quot;saveId&quot;:&quot;G6DJSVBgjy&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:1538,&quot;firstAttemptM3Levels&quot;:2080,&quot;fullCardCollections&quot;:2,&quot;fullCardSets&quot;:101,&quot;helpSent&quot;:8733,&quot;levelM3&quot;:2285,&quot;likesReceived&quot;:126,&quot;livesSent&quot;:2453,&quot;ranksEarned&quot;:[&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:10042}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava6&quot;},&quot;cityname&quot;:&quot;Gabrielli&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;frame_09&quot;},&quot;level&quot;:63,&quot;registerDate&quot;:1624617549,&quot;saveId&quot;:&quot;HWxnuhyGNa&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:119,&quot;firstAttemptM3Levels&quot;:1437,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:33,&quot;helpSent&quot;:449,&quot;levelM3&quot;:2587,&quot;likesReceived&quot;:11,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:178}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava7&quot;},&quot;cityname&quot;:&quot;Welcome to Happy Urbanville&quot;,&quot;level&quot;:113,&quot;registerDate&quot;:1694763426,&quot;saveId&quot;:&quot;PuKsV9Ej5o&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:113,&quot;firstAttemptM3Levels&quot;:782,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:14,&quot;helpSent&quot;:1851,&quot;levelM3&quot;:1257,&quot;likesReceived&quot;:52,&quot;livesSent&quot;:146,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Myingyan&quot;,&quot;level&quot;:19,&quot;registerDate&quot;:1793781168,&quot;saveId&quot;:&quot;iwyQMWoJWe&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:68,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:1,&quot;levelM3&quot;:88,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:2,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava7&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_06_base&quot;},&quot;cityname&quot;:&quot;Rou&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;neon&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_08&quot;},&quot;level&quot;:164,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_55_base&quot;},&quot;registerDate&quot;:1472643664,&quot;saveId&quot;:&quot;GgD5Wb0FUS&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:729,&quot;firstAttemptM3Levels&quot;:16355,&quot;fullCardCollections&quot;:6,&quot;fullCardSets&quot;:137,&quot;helpSent&quot;:11481,&quot;levelM3&quot;:29553,&quot;likesReceived&quot;:257,&quot;livesSent&quot;:361,&quot;ranksEarned&quot;:[&quot;EXP_Rank_47_base&quot;,&quot;EXP_Rank_47_grand&quot;,&quot;EXP_Rank_50_base&quot;,&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_55_base&quot;],&quot;regattaTasksCompleted&quot;:4816}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava379&quot;},&quot;cityname&quot;:&quot;ct isha&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;gold&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;gold&quot;},&quot;level&quot;:35,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1782890839,&quot;saveId&quot;:&quot;Mp4vuMavRR&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:1,&quot;firstAttemptM3Levels&quot;:1421,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:12,&quot;helpSent&quot;:6,&quot;levelM3&quot;:1541,&quot;likesReceived&quot;:4,&quot;livesSent&quot;:16,&quot;ranksEarned&quot;:[&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:97}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava50&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_base&quot;},&quot;cityname&quot;:&quot;CEL&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;easter&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_05&quot;},&quot;level&quot;:61,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1763617347,&quot;saveId&quot;:&quot;oxL6YELy18&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:60,&quot;firstAttemptM3Levels&quot;:5250,&quot;fullCardCollections&quot;:8,&quot;fullCardSets&quot;:138,&quot;helpSent&quot;:120,&quot;levelM3&quot;:8125,&quot;likesReceived&quot;:6,&quot;livesSent&quot;:1191,&quot;ranksEarned&quot;:[&quot;EXP_Rank_47_base&quot;,&quot;EXP_Rank_47_grand&quot;,&quot;EXP_Rank_48_base&quot;,&quot;EXP_Rank_50_base&quot;,&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:1577}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava1390&quot;},&quot;cityname&quot;:&quot;MagiFlo&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;train&quot;},&quot;level&quot;:33,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_56_base&quot;},&quot;registerDate&quot;:1790242446,&quot;saveId&quot;:&quot;7ZA9kgpKLk&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:11,&quot;firstAttemptM3Levels&quot;:1161,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:14,&quot;helpSent&quot;:3,&quot;levelM3&quot;:1195,&quot;likesReceived&quot;:1,&quot;livesSent&quot;:15,&quot;ranksEarned&quot;:[&quot;EXP_Rank_56_base&quot;],&quot;regattaTasksCompleted&quot;:132}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;fBMzEwNz81MzkxOD06OTc_Ow==&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;0109&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;train&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_11&quot;},&quot;level&quot;:63,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_grand&quot;},&quot;registerDate&quot;:1756163117,&quot;saveId&quot;:&quot;uTNOOWGs0q&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:159,&quot;firstAttemptM3Levels&quot;:12885,&quot;fullCardCollections&quot;:12,&quot;fullCardSets&quot;:186,&quot;helpSent&quot;:61,&quot;levelM3&quot;:14345,&quot;likesReceived&quot;:5,&quot;livesSent&quot;:605,&quot;ranksEarned&quot;:[&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_53_grand&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_54_grand&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_55_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_56_grand&quot;,&quot;EXP_Rank_57_base&quot;,&quot;EXP_Rank_57_grand&quot;],&quot;regattaTasksCompleted&quot;:2898}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava72&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_01_base&quot;},&quot;cityname&quot;:&quot;肉肉鎭&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;red&quot;},&quot;level&quot;:88,&quot;registerDate&quot;:1721078978,&quot;saveId&quot;:&quot;ChWffBmwfY&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:644,&quot;firstAttemptM3Levels&quot;:3246,&quot;fullCardCollections&quot;:1,&quot;fullCardSets&quot;:72,&quot;helpSent&quot;:6202,&quot;levelM3&quot;:3439,&quot;likesReceived&quot;:66,&quot;livesSent&quot;:1256,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:2620}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava48&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_base&quot;},&quot;cityname&quot;:&quot;tinali&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;frame_11&quot;},&quot;level&quot;:55,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1786145653,&quot;saveId&quot;:&quot;UZtqHuE6UL&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:14,&quot;firstAttemptM3Levels&quot;:2892,&quot;fullCardCollections&quot;:2,&quot;fullCardSets&quot;:42,&quot;helpSent&quot;:64,&quot;levelM3&quot;:3627,&quot;likesReceived&quot;:1,&quot;livesSent&quot;:330,&quot;ranksEarned&quot;:[&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:413}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Solith town&quot;,&quot;level&quot;:20,&quot;registerDate&quot;:1793540907,&quot;saveId&quot;:&quot;LGXTFLDPsz&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:106,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:1,&quot;levelM3&quot;:174,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;\u571f\u57ce\u7684\u7e3d\u88c130&quot;,&quot;level&quot;:31,&quot;registerDate&quot;:1793190801,&quot;saveId&quot;:&quot;D2Xtq7tcaS&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:3,&quot;firstAttemptM3Levels&quot;:1,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:1,&quot;levelM3&quot;:2,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava390&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;Fullerton&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;pumpkin&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_09&quot;},&quot;level&quot;:140,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1629253412,&quot;saveId&quot;:&quot;S9VZcuKGkW&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:208,&quot;firstAttemptM3Levels&quot;:32931,&quot;fullCardCollections&quot;:19,&quot;fullCardSets&quot;:302,&quot;helpSent&quot;:9930,&quot;levelM3&quot;:66957,&quot;likesReceived&quot;:71,&quot;livesSent&quot;:8794,&quot;ranksEarned&quot;:[&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_51_grand&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_52_grand&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_53_grand&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_54_grand&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_55_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_56_grand&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:14861}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;fBMzM0NjowPDwzMTszNTM_NDc=&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;Joy&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;pumpkin&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_11&quot;},&quot;level&quot;:246,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_grand&quot;},&quot;registerDate&quot;:1610583747,&quot;saveId&quot;:&quot;bLcwgrUrEF&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:453,&quot;firstAttemptM3Levels&quot;:17500,&quot;fullCardCollections&quot;:16,&quot;fullCardSets&quot;:299,&quot;helpSent&quot;:9271,&quot;levelM3&quot;:37582,&quot;likesReceived&quot;:120,&quot;livesSent&quot;:11320,&quot;ranksEarned&quot;:[&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_51_grand&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_52_grand&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_53_grand&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_54_grand&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_55_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_56_grand&quot;,&quot;EXP_Rank_57_base&quot;,&quot;EXP_Rank_57_grand&quot;],&quot;regattaTasksCompleted&quot;:9130}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava24&quot;},&quot;cityname&quot;:&quot;Haha&quot;,&quot;level&quot;:64,&quot;registerDate&quot;:1724118820,&quot;saveId&quot;:&quot;cBM9Y5HtJ3&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:93,&quot;firstAttemptM3Levels&quot;:3218,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:47,&quot;helpSent&quot;:8,&quot;levelM3&quot;:6197,&quot;likesReceived&quot;:8,&quot;livesSent&quot;:1068,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:599}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava6&quot;},&quot;cityname&quot;:&quot;Sweet &amp;Smart&quot;,&quot;level&quot;:34,&quot;registerDate&quot;:1569254466,&quot;saveId&quot;:&quot;8xTMoAGRnr&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:1,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:2,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava31&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;supreme&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;frame_10&quot;},&quot;level&quot;:48,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1789285720,&quot;saveId&quot;:&quot;OBsvobiOcb&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:72,&quot;firstAttemptM3Levels&quot;:1122,&quot;fullCardCollections&quot;:2,&quot;fullCardSets&quot;:32,&quot;helpSent&quot;:54,&quot;levelM3&quot;:1740,&quot;likesReceived&quot;:2,&quot;livesSent&quot;:564,&quot;ranksEarned&quot;:[&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_55_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:170}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava296&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;jasmine&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;pumpkin&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;frame_09&quot;},&quot;level&quot;:114,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1667118839,&quot;saveId&quot;:&quot;lRxJf3Irsy&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:589,&quot;firstAttemptM3Levels&quot;:17563,&quot;fullCardCollections&quot;:12,&quot;fullCardSets&quot;:219,&quot;helpSent&quot;:1625,&quot;levelM3&quot;:36742,&quot;likesReceived&quot;:71,&quot;livesSent&quot;:4973,&quot;ranksEarned&quot;:[&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_52_grand&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_54_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:2222}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava0&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_07_grand&quot;},&quot;cityname&quot;:&quot;aggy&quot;,&quot;font&quot;:{&quot;id&quot;:&quot;gold&quot;},&quot;frame&quot;:{&quot;id&quot;:&quot;gold&quot;},&quot;level&quot;:75,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_grand&quot;},&quot;registerDate&quot;:1775386676,&quot;saveId&quot;:&quot;PdYARjfCER&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:37,&quot;firstAttemptM3Levels&quot;:8254,&quot;fullCardCollections&quot;:6,&quot;fullCardSets&quot;:113,&quot;helpSent&quot;:8,&quot;levelM3&quot;:9350,&quot;likesReceived&quot;:2,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[&quot;EXP_Rank_47_base&quot;,&quot;EXP_Rank_48_base&quot;,&quot;EXP_Rank_48_grand&quot;,&quot;EXP_Rank_49_base&quot;,&quot;EXP_Rank_49_grand&quot;,&quot;EXP_Rank_50_base&quot;,&quot;EXP_Rank_50_grand&quot;,&quot;EXP_Rank_53_base&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_55_grand&quot;,&quot;EXP_Rank_56_base&quot;,&quot;EXP_Rank_56_grand&quot;,&quot;EXP_Rank_57_base&quot;,&quot;EXP_Rank_57_grand&quot;],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Diidiithh&quot;,&quot;level&quot;:10,&quot;registerDate&quot;:1794809551,&quot;saveId&quot;:&quot;imnTJ5wSiC&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:32,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:45,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;jasmin&quot;,&quot;level&quot;:5,&quot;registerDate&quot;:1794795726,&quot;saveId&quot;:&quot;T3jb5CvJBk&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:0,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:1,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava1390&quot;},&quot;cityname&quot;:&quot;ambot&quot;,&quot;level&quot;:8,&quot;registerDate&quot;:1794751850,&quot;saveId&quot;:&quot;NMZazOfSFh&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:3,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:1,&quot;levelM3&quot;:4,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;P-A-D&quot;,&quot;level&quot;:5,&quot;registerDate&quot;:1794636011,&quot;saveId&quot;:&quot;9Xljh570hT&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:0,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:1,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;kanAria&quot;,&quot;level&quot;:7,&quot;registerDate&quot;:1794807584,&quot;saveId&quot;:&quot;0N8Ca3GL1w&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:0,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:1,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;cityname&quot;:&quot;Kayla&quot;,&quot;level&quot;:12,&quot;registerDate&quot;:1794756690,&quot;saveId&quot;:&quot;ohQGarsPxc&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:5,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:6,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava2&quot;},&quot;cityname&quot;:&quot;Niigame205&quot;,&quot;level&quot;:7,&quot;registerDate&quot;:1788053460,&quot;saveId&quot;:&quot;rAciYBXeo9&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:0,&quot;fullCardCollections&quot;:0,&quot;fullCardSets&quot;:0,&quot;helpSent&quot;:0,&quot;levelM3&quot;:1,&quot;likesReceived&quot;:0,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_08_base&quot;},&quot;cityname&quot;:&quot;Totemoflol&quot;,&quot;level&quot;:10,&quot;registerDate&quot;:1794810038,&quot;saveId&quot;:&quot;yGyECXnO6M&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:0,&quot;firstAttemptM3Levels&quot;:0,&quot;fullCardCollections&quot;:1,&quot;fullCardSets&quot;:15,&quot;helpSent&quot;:0,&quot;levelM3&quot;:1,&quot;likesReceived&quot;:100,&quot;livesSent&quot;:0,&quot;ranksEarned&quot;:[],&quot;regattaTasksCompleted&quot;:0}},{&quot;avatar&quot;:{&quot;id&quot;:&quot;ava294&quot;},&quot;badge&quot;:{&quot;id&quot;:&quot;badge_08_grand&quot;},&quot;cityname&quot;:&quot;Durian9&quot;,&quot;frame&quot;:{&quot;id&quot;:&quot;frame_04&quot;},&quot;level&quot;:158,&quot;rank&quot;:{&quot;id&quot;:&quot;EXP_Rank_57_base&quot;},&quot;registerDate&quot;:1669524434,&quot;saveId&quot;:&quot;ztQqq7Phyx&quot;,&quot;stats&quot;:{&quot;buildingsUpgrades&quot;:211,&quot;firstAttemptM3Levels&quot;:4422,&quot;fullCardCollections&quot;:25,&quot;fullCardSets&quot;:428,&quot;helpSent&quot;:3375,&quot;levelM3&quot;:9735,&quot;likesReceived&quot;:125,&quot;livesSent&quot;:6437,&quot;ranksEarned&quot;:[&quot;EXP_Rank_47_base&quot;,&quot;EXP_Rank_50_base&quot;,&quot;EXP_Rank_51_base&quot;,&quot;EXP_Rank_52_base&quot;,&quot;EXP_Rank_54_base&quot;,&quot;EXP_Rank_55_base&quot;,&quot;EXP_Rank_57_base&quot;],&quot;regattaTasksCompleted&quot;:8899}}]" ClansCache="[{&quot;clanId&quot;:&quot;rT2LwcXTyV&quot;,&quot;clanName&quot;:&quot;少年雞&quot;,&quot;flag&quot;:{&quot;back&quot;:5,&quot;colorNum&quot;:2,&quot;country&quot;:1,&quot;league&quot;:0,&quot;pattern&quot;:6,&quot;symbol&quot;:2,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;BJxES2iP2Y&quot;,&quot;clanName&quot;:&quot;Orasis&quot;,&quot;flag&quot;:{&quot;back&quot;:1,&quot;colorNum&quot;:16,&quot;country&quot;:44,&quot;league&quot;:0,&quot;pattern&quot;:0,&quot;symbol&quot;:6,&quot;viewType&quot;:1}},{&quot;clanId&quot;:&quot;RXjevea1eD&quot;,&quot;clanName&quot;:&quot;SGK&quot;,&quot;flag&quot;:{&quot;back&quot;:1,&quot;colorNum&quot;:9,&quot;country&quot;:44,&quot;league&quot;:3,&quot;pattern&quot;:0,&quot;symbol&quot;:29,&quot;viewType&quot;:1}},{&quot;clanId&quot;:&quot;m9f3TJmcvl&quot;,&quot;clanName&quot;:&quot;Ville for friends &quot;,&quot;flag&quot;:{&quot;back&quot;:8,&quot;colorNum&quot;:7,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:15,&quot;symbol&quot;:26,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;mH1FRxiVVf&quot;,&quot;clanName&quot;:&quot;Farm&quot;,&quot;flag&quot;:{&quot;back&quot;:2,&quot;colorNum&quot;:21,&quot;country&quot;:1,&quot;league&quot;:3,&quot;pattern&quot;:0,&quot;symbol&quot;:5,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;taNWfQSKKI&quot;,&quot;clanName&quot;:&quot;佩菁與好友&quot;,&quot;flag&quot;:{&quot;back&quot;:8,&quot;colorNum&quot;:1,&quot;country&quot;:0,&quot;league&quot;:5,&quot;pattern&quot;:8,&quot;symbol&quot;:4,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;ELXk9RX5Gp&quot;,&quot;clanName&quot;:&quot;otwkaya&quot;,&quot;flag&quot;:{&quot;back&quot;:1,&quot;colorNum&quot;:0,&quot;country&quot;:1,&quot;league&quot;:3,&quot;pattern&quot;:0,&quot;symbol&quot;:22,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;Jbdwqo8Nja&quot;,&quot;clanName&quot;:&quot;SEPUPU ERNIE&quot;,&quot;flag&quot;:{&quot;back&quot;:1,&quot;colorNum&quot;:0,&quot;country&quot;:1,&quot;league&quot;:4,&quot;pattern&quot;:0,&quot;symbol&quot;:6,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;xo5u81FTMz&quot;,&quot;clanName&quot;:&quot;Speed Racers&quot;,&quot;flag&quot;:{&quot;back&quot;:23,&quot;colorNum&quot;:1,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:0,&quot;symbol&quot;:23,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;toDEqxuXHl&quot;,&quot;clanName&quot;:&quot;2332&quot;,&quot;flag&quot;:{&quot;back&quot;:3,&quot;colorNum&quot;:6,&quot;country&quot;:0,&quot;league&quot;:2,&quot;pattern&quot;:3,&quot;symbol&quot;:3,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;rDJmTjXAXl&quot;,&quot;clanName&quot;:&quot;JOIN GUYS !! &quot;,&quot;flag&quot;:{&quot;back&quot;:11,&quot;colorNum&quot;:2,&quot;country&quot;:7,&quot;league&quot;:3,&quot;pattern&quot;:0,&quot;symbol&quot;:37,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;eCS8nbBTLX&quot;,&quot;clanName&quot;:&quot;Yasmin&quot;,&quot;flag&quot;:{&quot;back&quot;:1,&quot;colorNum&quot;:6,&quot;country&quot;:0,&quot;league&quot;:3,&quot;pattern&quot;:2,&quot;symbol&quot;:3,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;ixLRklFTrg&quot;,&quot;clanName&quot;:&quot;Cinnamoroll&quot;,&quot;flag&quot;:{&quot;back&quot;:14,&quot;colorNum&quot;:0,&quot;country&quot;:1,&quot;league&quot;:4,&quot;pattern&quot;:0,&quot;symbol&quot;:13,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;SBkNkKB82W&quot;,&quot;clanName&quot;:&quot;Freedom&quot;,&quot;flag&quot;:{&quot;back&quot;:23,&quot;colorNum&quot;:3,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:0,&quot;symbol&quot;:12,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;Xil0epfTji&quot;,&quot;clanName&quot;:&quot;GENEROSITY &quot;,&quot;flag&quot;:{&quot;back&quot;:14,&quot;colorNum&quot;:3,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:4,&quot;symbol&quot;:11,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;zOMrFnvfuA&quot;,&quot;clanName&quot;:&quot;Galactica&quot;,&quot;flag&quot;:{&quot;back&quot;:15,&quot;colorNum&quot;:7,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:0,&quot;symbol&quot;:9,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;RIY3nNAFOk&quot;,&quot;clanName&quot;:&quot;YumYum&quot;,&quot;flag&quot;:{&quot;back&quot;:15,&quot;colorNum&quot;:14,&quot;country&quot;:1,&quot;league&quot;:3,&quot;pattern&quot;:0,&quot;symbol&quot;:38,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;RMxZlXBrYO&quot;,&quot;clanName&quot;:&quot;冠维城镇&quot;,&quot;flag&quot;:{&quot;back&quot;:2,&quot;colorNum&quot;:6,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:6,&quot;symbol&quot;:27,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;G12HUfwwrv&quot;,&quot;clanName&quot;:&quot;Luna Land&quot;,&quot;flag&quot;:{&quot;back&quot;:14,&quot;colorNum&quot;:10,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:0,&quot;symbol&quot;:23,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;Zn1jovDZaa&quot;,&quot;clanName&quot;:&quot;D Best&quot;,&quot;flag&quot;:{&quot;back&quot;:4,&quot;colorNum&quot;:0,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:1,&quot;symbol&quot;:29,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;hCQi0E104W&quot;,&quot;clanName&quot;:&quot;veluwe&quot;,&quot;flag&quot;:{&quot;back&quot;:6,&quot;colorNum&quot;:2,&quot;country&quot;:1,&quot;league&quot;:3,&quot;pattern&quot;:15,&quot;symbol&quot;:2,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;UuLMlerpoH&quot;,&quot;clanName&quot;:&quot;Queentown&quot;,&quot;flag&quot;:{&quot;back&quot;:3,&quot;colorNum&quot;:5,&quot;country&quot;:1,&quot;league&quot;:4,&quot;pattern&quot;:10,&quot;symbol&quot;:5,&quot;viewType&quot;:0}},{&quot;clanId&quot;:&quot;47JUFQyhp5&quot;,&quot;clanName&quot;:&quot;Good Old Days&quot;,&quot;flag&quot;:{&quot;back&quot;:23,&quot;colorNum&quot;:0,&quot;country&quot;:33,&quot;league&quot;:5,&quot;pattern&quot;:0,&quot;symbol&quot;:37,&quot;viewType&quot;:1}},{&quot;clanId&quot;:&quot;008ZWhHIKu&quot;,&quot;clanName&quot;:&quot;YoungForever&quot;,&quot;flag&quot;:{&quot;back&quot;:16,&quot;colorNum&quot;:1,&quot;country&quot;:1,&quot;league&quot;:5,&quot;pattern&quot;:0,&quot;symbol&quot;:10,&quot;viewType&quot;:0}}]" ProfilesToClanCache="4C0Znc9SXj:BJxES2iP2Y,4EPkUcOZ4j:ELXk9RX5Gp,7ZA9kgpKLk:Xil0epfTji,ChWffBmwfY:RIY3nNAFOk,G6DJSVBgjy:xo5u81FTMz,GgD5Wb0FUS:eCS8nbBTLX,HWxnuhyGNa:toDEqxuXHl,Mp4vuMavRR:ixLRklFTrg,O6n6GqHqOV:mH1FRxiVVf,OBsvobiOcb:UuLMlerpoH,S9VZcuKGkW:G12HUfwwrv,TPLKlrfiGT:RXjevea1eD,Tq03ESPp2r:Jbdwqo8Nja,UZtqHuE6UL:RMxZlXBrYO,bLcwgrUrEF:Zn1jovDZaa,cBM9Y5HtJ3:hCQi0E104W,iwyQMWoJWe:rDJmTjXAXl,lRxJf3Irsy:47JUFQyhp5,msHc4GqMYl:m9f3TJmcvl,nQzPK7m2Gv:rT2LwcXTyV,oxL6YELy18:SBkNkKB82W,uTNOOWGs0q:zOMrFnvfuA,zUW1JTJ25r:taNWfQSKKI,ztQqq7Phyx:008ZWhHIKu"/>
+  <DragonNestTokensAnalytic/>
+  <TrainJourneyTokensAnalytic/>
+</root>
